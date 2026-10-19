@@ -8,7 +8,19 @@ Built 2026-10-13 for review. Everything numeric is either fetched live or read f
 
 ---
 
-## Live preview link
+## Deployment
+
+**Live:** https://huntsville-move-site-production.up.railway.app — Railway project
+`sweet-courage`, service `huntsville-move-site`, deploying from
+`github.com/timbyrne7/huntsville-move-site` branch `main`. Push to `main` and Railway
+rebuilds automatically. Leads are written to a mounted volume (`LEADS_DIR=/data`) so they
+survive redeploys. Full record, IDs and operating commands: `DEPLOY.md`.
+
+**Domain:** `www.movetohuntsville.net` is attached to the Railway service and waiting on a
+GoDaddy CNAME → `ht83stna.up.railway.app`. Until that resolves, the `.up.railway.app` URL is
+the site.
+
+## Live preview link (local tunnel — superseded by the Railway deploy)
 
 **https://weblog-tapes-dispatch-volumes.trycloudflare.com** — a Cloudflare quick tunnel from this
 container to `localhost:8080`. Open it anywhere; no interstitial, no login. Mobile works too.
@@ -19,11 +31,10 @@ It is a tunnel, not a deployment, so two things are true:
 - The link lives only while two processes run: `python3 server.py --port 8080` in this folder, and
   `/opt/data/bin/cloudflared tunnel --url http://localhost:8080 --logfile /opt/data/cloudflared.log`.
   The URL is printed in that log; a **restart gives a new random URL**.
-- Anyone with the link can load the pages and submit the forms (submissions land in `leads.csv` on this
-  box). It is not a public launch — the compliance placeholders are still placeholders.
+- Anyone with the link can load the pages and submit the forms. It is not a public launch — the
+  compliance placeholders are still placeholders.
 
-If the link stops working, restart both processes; if you want a stable URL, that needs a named
-Cloudflare tunnel or a real deployment (the receipttocsv GitHub → Railway pattern).
+For a stable URL use the Railway deployment above.
 
 ## Run it
 

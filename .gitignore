@@ -27,3 +27,4 @@ scratch/
 
 # Runtime data files (never commit submissions)
 alerts.jsonl
+.leads_token

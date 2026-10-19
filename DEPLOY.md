@@ -1,6 +1,46 @@
-# Connecting movetohuntsville.net
+# Deploying and connecting movetohuntsville.net
 
-Domain state as checked on 2026-10-19 (RDAP + DNS):
+## Current status — live on Railway (2026-10-19)
+
+| | |
+| --- | --- |
+| Railway workspace | `timbyrne7's Projects` |
+| Project | `sweet-courage` — `8cbd341f-b0a9-4846-8449-b533c10ec5a5` |
+| Service | `huntsville-move-site` — `0afa3aa2-f971-43cd-9f35-052ba57b8861` (region `iad`) |
+| Environment | `production` — `b2e9a5d0-4579-42b3-957d-82932f314c14` |
+| Source | `github.com/timbyrne7/huntsville-move-site` (public), branch `main` — **push to deploy** |
+| Railway URL | https://huntsville-move-site-production.up.railway.app (verified 200) |
+| Volume | `huntsville-move-site-volume` — `cc9d1afa-6724-428d-813b-b46f871caba4`, mounted `/data`, 5 GB |
+| Variables | `LEADS_DIR=/data`, `LEADS_TOKEN` (value in local `.leads_token`, gitignored) |
+| Custom domain | `www.movetohuntsville.net` — Railway wants `CNAME www → ht83stna.up.railway.app` |
+
+**The one step left is at GoDaddy:** DNS → add `CNAME`, name `www`, value `ht83stna.up.railway.app`,
+TTL 600. Railway then issues the certificate automatically (`railway domain status 5d954053-92ee-4ad3-bf03-4fac6be202be`
+to watch it). For the bare apex, use GoDaddy **Domain Forwarding** to `https://www.movetohuntsville.net`
+(301, forward only) — GoDaddy DNS has no ALIAS/ANAME, so an apex CNAME is not possible.
+
+### Operating it
+
+```bash
+# deploy: push to main and Railway rebuilds automatically
+git push origin main
+
+railway status                          # service + deployment state
+railway logs                            # build/runtime logs (linked to this folder)
+railway variables                       # current env vars
+railway domain                          # service + custom domains
+
+# read captured leads (never served to the public)
+curl "https://www.movetohuntsville.net/_leads?token=$(cat .leads_token)"
+
+# shell into the running container / inspect the volume
+railway ssh "ls -la /data && tail -3 /data/leads.jsonl"
+```
+
+`/_leads` answers 404 to any request from a non-local host without the token, and any
+`/leads.*` path is 403 — both verified against the deployed service, not just locally.
+
+## Original domain facts (checked 2026-10-19, RDAP + DNS)
 
 | | |
 | --- | --- |
@@ -9,11 +49,9 @@ Domain state as checked on 2026-10-19 (RDAP + DNS):
 | Nameservers | `ns55.domaincontrol.com`, `ns56.domaincontrol.com` (GoDaddy DNS) |
 | A records | `15.197.148.33`, `3.33.130.190` — GoDaddy's **parking page**, not a site |
 
-So nothing is wired yet. There are two ways to connect it; pick one, not both.
-
 ---
 
-## Option A — Railway (same pattern as receipttocsv.com)
+## Option A — Railway (chosen)
 
 The server is stdlib-only Python, reads `$PORT`, binds `0.0.0.0`; `Procfile`,
 `runtime.txt` and `requirements.txt` are already in the repo, so Railway needs no build
