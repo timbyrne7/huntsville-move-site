@@ -23,9 +23,14 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-LEADS = os.path.join(ROOT, "leads.jsonl")
-LEADS_CSV = os.path.join(ROOT, "leads.csv")
-ALERTS = os.path.join(ROOT, "alerts.jsonl")
+# Captured leads must survive a redeploy, so allow them to live outside the app folder
+# (e.g. LEADS_DIR=/data on a mounted Railway volume). Defaults to the project folder.
+LEADS_DIR = os.environ.get("LEADS_DIR") or ROOT
+if LEADS_DIR != ROOT:
+    os.makedirs(LEADS_DIR, exist_ok=True)
+LEADS = os.path.join(LEADS_DIR, "leads.jsonl")
+LEADS_CSV = os.path.join(LEADS_DIR, "leads.csv")
+ALERTS = os.path.join(LEADS_DIR, "alerts.jsonl")
 
 MIME = {
     ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8",

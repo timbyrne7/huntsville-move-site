@@ -1,0 +1,3 @@
+# No third-party dependencies — server.py is standard library only.
+# This file exists so Railway/Nixpacks detects the Python provider and runs
+# `pip install -r requirements.txt` as a no-op instead of guessing.
