@@ -15,8 +15,9 @@ So nothing is wired yet. There are two ways to connect it; pick one, not both.
 
 ## Option A — Railway (same pattern as receipttocsv.com)
 
-The server is stdlib-only Python, reads `$PORT`, binds `0.0.0.0`; `Procfile` and
-`runtime.txt` are already in the repo, so Railway needs no build configuration.
+The server is stdlib-only Python, reads `$PORT`, binds `0.0.0.0`; `Procfile`,
+`runtime.txt` and `requirements.txt` are already in the repo, so Railway needs no build
+configuration.
 
 1. **Push this folder to GitHub** (it is a fresh git repo with one commit, no remote yet):
    ```bash
@@ -26,10 +27,16 @@ The server is stdlib-only Python, reads `$PORT`, binds `0.0.0.0`; `Procfile` and
 2. **Railway → New Project → Deploy from GitHub repo** → pick the repo. It runs
    `web: python3 server.py --port $PORT --host 0.0.0.0` and gives you a
    `*.up.railway.app` hostname.
-3. **Railway → your service → Settings → Networking → Custom Domain** → add
+3. **Add a volume before the first real lead** — service → Variables/Data → **+ Volume**,
+   mount path `/data`, then add the variable `LEADS_DIR=/data`. The service redeploys and
+   submissions land on persistent storage instead of the wiped container filesystem.
+4. **Add `LEADS_TOKEN`** (any long random string) if you want to read submissions in
+   production: `https://<your-domain>/_leads?token=<that string>`. Without it, `/_leads`
+   answers 404 to any non-local request and `/leads.csv` is never served.
+5. **Railway → your service → Settings → Networking → Custom Domain** → add
    `movetohuntsville.net`. Railway replies with a CNAME target such as
    `xxxxxxxx.up.railway.app`.
-4. **At GoDaddy → DNS**, add:
+6. **At GoDaddy → DNS**, add:
 
    | Type | Name | Value | TTL |
    | --- | --- | --- | --- |
@@ -46,16 +53,24 @@ The server is stdlib-only Python, reads `$PORT`, binds `0.0.0.0`; `Procfile` and
    Either way, once DNS resolves, Railway issues the TLS certificate automatically (usually
    a few minutes; it needs the CNAME to be correct first).
 
-5. **Verify**: `curl -I https://www.movetohuntsville.net` should show `200` and a valid
+7. **Verify**: `curl -I https://www.movetohuntsville.net` should show `200` and a valid
    certificate; then check that `https://movetohuntsville.net` redirects to it.
 
-### Before real traffic: leads do not survive a redeploy
+### Environment variables the app understands
 
-`server.py` appends submissions to `leads.jsonl` / `leads.csv` in the project folder. On
-Railway that filesystem is **ephemeral** — every deploy wipes it, and it is not shared
-between instances. Either attach a Railway volume mounted where the app writes, or change
-the form handler to post to a real destination (CRM, email, Google Sheet). Do not launch a
-paid campaign against the current storage.
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `PORT` | `8080` | Set by Railway; the server binds it |
+| `HOST` | `0.0.0.0` | Bind address |
+| `LEADS_DIR` | project folder | Where `leads.jsonl` / `leads.csv` / `alerts.jsonl` are written — point at the mounted volume |
+| `LEADS_TOKEN` | unset | Enables `/_leads?token=…` from a public host; unset means localhost-only |
+
+### Before real traffic
+
+Railway's container filesystem is **ephemeral** — every deploy wipes it and it is not shared
+between instances. Step 3 (volume + `LEADS_DIR`) fixes that, or change the form handler to
+post to a real destination (CRM, email, Google Sheet). Do not launch a paid campaign against
+container-local storage.
 
 ---
 
