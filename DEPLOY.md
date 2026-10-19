@@ -12,12 +12,22 @@
 | Railway URL | https://huntsville-move-site-production.up.railway.app (verified 200) |
 | Volume | `huntsville-move-site-volume` — `cc9d1afa-6724-428d-813b-b46f871caba4`, mounted `/data`, 5 GB |
 | Variables | `LEADS_DIR=/data`, `LEADS_TOKEN` (value in local `.leads_token`, gitignored) |
-| Custom domain | `www.movetohuntsville.net` — Railway wants `CNAME www → ht83stna.up.railway.app` |
+| Custom domain | `www.movetohuntsville.net` — **verified, Let's Encrypt cert live** (CN=`www.movetohuntsville.net`, expires 2027-01-17) |
+| Apex | `movetohuntsville.net` — GoDaddy forwarding still redirects to itself (301 loop) and serves no TLS; Railway has the apex staged and wants `CNAME @ → ma3ljqel.up.railway.app` + `TXT _railway-verify`, which GoDaddy DNS cannot satisfy (no ALIAS) |
 
-**The one step left is at GoDaddy:** DNS → add `CNAME`, name `www`, value `ht83stna.up.railway.app`,
-TTL 600. Railway then issues the certificate automatically (`railway domain status 5d954053-92ee-4ad3-bf03-4fac6be202be`
-to watch it). For the bare apex, use GoDaddy **Domain Forwarding** to `https://www.movetohuntsville.net`
-(301, forward only) — GoDaddy DNS has no ALIAS/ANAME, so an apex CNAME is not possible.
+Verified 2026-10-19 21:15 UTC over the live domain: all 20 pages 200, `/health` 200,
+`http://` → 301 `https://`, `/_leads` 404 from outside, `/leads.csv|jsonl` 403.
+
+### Apex: pick one
+
+1. **GoDaddy forwarding** (no DNS move) — set the target to `https://www.movetohuntsville.net`,
+   301, forward only. Fixes `http://movetohuntsville.net`, but `https://movetohuntsville.net`
+   will still throw a certificate warning: GoDaddy's forwarding fleet serves no TLS for the apex.
+2. **Move DNS to Cloudflare** (free, recommended) — change the nameservers at GoDaddy, then
+   create `CNAME @ → ma3ljqel.up.railway.app` (proxied, gives flattening) plus
+   `TXT _railway-verify = railway-verify=0223e770abd78153d4aefbd3fa8839f80fe8da3b5523849b3f09c6c87c40ede8`,
+   and a redirect rule `movetohuntsville.net/*` → `https://www.movetohuntsville.net/$1`. The apex
+   then serves the site over HTTPS with no warnings.
 
 ### Operating it
 

@@ -16,9 +16,9 @@ Built 2026-10-13 for review. Everything numeric is either fetched live or read f
 rebuilds automatically. Leads are written to a mounted volume (`LEADS_DIR=/data`) so they
 survive redeploys. Full record, IDs and operating commands: `DEPLOY.md`.
 
-**Domain:** `www.movetohuntsville.net` is attached to the Railway service and waiting on a
-GoDaddy CNAME → `ht83stna.up.railway.app`. Until that resolves, the `.up.railway.app` URL is
-the site.
+**Domain:** https://www.movetohuntsville.net is live — verified, TLS certificate issued, all
+pages serving. The bare `movetohuntsville.net` still needs an apex fix (GoDaddy forwarding
+currently 301-loops to itself and serves no HTTPS); see `DEPLOY.md` for the two options.
 
 ## Live preview link (local tunnel — superseded by the Railway deploy)
 
