@@ -24,3 +24,6 @@ Thumbs.db
 # Local scratch
 cache/
 scratch/
+
+# Runtime data files (never commit submissions)
+alerts.jsonl
