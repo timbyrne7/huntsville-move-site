@@ -1,0 +1,329 @@
+{
+ "note": "District assignments below are the general case for the community named. Zone lines in Madison County do not follow mailing addresses \u2014 every page links to the official locator and every claim is flagged if it needs confirmation at your exact address.",
+ "hoods": [
+  {
+   "name": "Downtown Huntsville",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "Courthouse square, loft conversions and the walkable core.",
+   "best_for": "People who want to walk to work, dinner and the ballpark and do not want a lawn.",
+   "trade_off": "Price per square foot is high for the square footage, and street noise is real.",
+   "housing": "Lofts and condos above ground-floor retail, plus pre-war houses on the edges."
+  },
+  {
+   "name": "Five Points",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "Historic street grid a mile east of downtown with its own business district.",
+   "best_for": "Buyers who want a 1920s\u20131950s house, sidewalks and a neighbourhood school.",
+   "trade_off": "Older housing stock means older systems; expect to price in HVAC, wiring and roof work.",
+   "housing": "Craftsman, Tudor and cottage bungalows, mostly owner-occupied."
+  },
+  {
+   "name": "Blossomwood",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "Established tree-canopy neighbourhood between downtown and the medical district.",
+   "best_for": "Hospital and research-park commuters who want a short drive and a mature neighbourhood.",
+   "trade_off": "Inventory is thin and well-kept houses move fast; renovation candidates are priced close to turnkey ones.",
+   "housing": "Mid-century and post-war brick, a mix of original owners and rehabs."
+  },
+  {
+   "name": "Twickenham / Old Town",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "The historic district proper \u2014 antebellum and Victorian houses on brick streets.",
+   "best_for": "Buyers who want the most character in the city and accept preservation rules.",
+   "trade_off": "Historic-district review applies to exterior work; insurance and maintenance on 1800s structures cost more.",
+   "housing": "Single-family historic homes, very little turnover."
+  },
+  {
+   "name": "Jones Valley",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "Southeast Huntsville valley between the mountain and the river.",
+   "best_for": "Families wanting newer construction inside the city system with quick access to Redstone.",
+   "trade_off": "Subdivision-heavy, so lots are smaller and HOA rules are common.",
+   "housing": "1990s\u20132020s subdivisions, mostly two-storey."
+  },
+  {
+   "name": "South Huntsville",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "The Whitesburg Drive / Bailey Cove corridor south of the mountain.",
+   "best_for": "Value per square foot with a real commute advantage to Gate 1 and Gate 3.",
+   "trade_off": "Some pockets are dated; check school-by-school rather than treating the area as one.",
+   "housing": "1960s\u20131990s ranches and two-storeys, plus newer infill."
+  },
+  {
+   "name": "Research Park",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "Cummings Research Park \u2014 the second-largest research park in the country.",
+   "best_for": "Engineers who want to walk or bike to work at Adtran, Boeing, Lockheed or the arsenal contractors.",
+   "trade_off": "It is an employment district first; residential choice is on its edges, not in its middle.",
+   "housing": "Apartments, townhomes and nearby 1970s\u20132000s subdivisions."
+  },
+  {
+   "name": "Providence",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "New-urbanist village in west Huntsville with a town centre, alleys and pocket parks.",
+   "best_for": "Buyers who want a walkable planned community and a short trip to Research Park.",
+   "trade_off": "Architectural and paint rules are strict; lots are narrow by design.",
+   "housing": "Craftsman-style detached and attached homes built from the 2000s on."
+  },
+  {
+   "name": "MidCity",
+   "district": "Huntsville City Schools",
+   "confirmed": true,
+   "hook": "The redeveloped old mall site \u2014 entertainment, retail and density in one district.",
+   "best_for": "Renters and first-time buyers who want new-build and to be five minutes from everything.",
+   "trade_off": "It is a district in transition; construction and traffic patterns will keep changing.",
+   "housing": "New apartments and townhomes, more rental than ownership."
+  },
+  {
+   "name": "Hampton Cove",
+   "district": "Huntsville City Schools",
+   "confirmed": false,
+   "hook": "Golf-course and valley community over the mountain in the southeast.",
+   "best_for": "Buyers who want space, a mountain backdrop and a straight shot down 431 to the arsenal.",
+   "trade_off": "The mountain makes every trip to town longer than the map suggests; confirm the district at your parcel.",
+   "housing": "1990s\u20132010s subdivisions and golf-front homes."
+  },
+  {
+   "name": "Big Cove",
+   "district": "Split \u2014 Huntsville City and Madison County",
+   "confirmed": false,
+   "hook": "The valley between Hampton Cove and Owens Cross Roads where the new builds are.",
+   "best_for": "New construction and larger lots for the money.",
+   "trade_off": "Zone lines here are the single most-misreported fact in the county \u2014 check the parcel, not the address.",
+   "housing": "2000s\u20132020s construction, many on acreage."
+  },
+  {
+   "name": "Owens Cross Roads",
+   "district": "Madison County Schools",
+   "confirmed": false,
+   "hook": "Small town on the southeast edge, grown into the newest suburb.",
+   "best_for": "Buyers who want a newer house and a small-town centre with city conveniences 20 minutes away.",
+   "trade_off": "Commuting to the arsenal or Research Park runs through the mountain gap \u2014 check the drive before you buy.",
+   "housing": "New subdivisions and acreage lots; some older town-core houses."
+  },
+  {
+   "name": "Madison",
+   "district": "Madison City Schools",
+   "confirmed": true,
+   "hook": "The west-side city \u2014 its own school district, its own downtown, closest suburb to Research Park.",
+   "best_for": "Families who want Madison City Schools and a short drive to Gate 9 and Research Park.",
+   "trade_off": "West-side growth has put pressure on roads and school capacity; ask about current zoning for any new build.",
+   "housing": "Every era from 1960s ranches to current subdivisions."
+  },
+  {
+   "name": "Harvest",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Fast-growing unincorporated area north of Madison on the 53 corridor.",
+   "best_for": "Buyers who want new construction and land for less than city pricing.",
+   "trade_off": "County services, not city \u2014 trash and utilities work differently, and the commute to Research Park crosses the whole county.",
+   "housing": "New subdivisions and acreage, mostly 2000s onward."
+  },
+  {
+   "name": "Monrovia",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Rural-residential west of Madison, still horse country in places.",
+   "best_for": "Buyers who want acreage and a short trip to the Mazda Toyota and Greenbrier employers.",
+   "trade_off": "Fewer services and longer drives to groceries; internet availability varies by street.",
+   "housing": "Custom homes on acreage alongside older farmhouses."
+  },
+  {
+   "name": "Meridianville",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "North county community on the 431 corridor.",
+   "best_for": "Buyers chasing price and lot size with a straight run south to town.",
+   "trade_off": "The 431 corridor is the commute \u2014 it congests, so test your actual times.",
+   "housing": "Newer subdivisions and rural tracts."
+  },
+  {
+   "name": "New Market",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Northeast county, closer to the mountains and the Paint Rock valley.",
+   "best_for": "Buyers who want quiet and land over proximity.",
+   "trade_off": "Longest drives of the county communities to city jobs.",
+   "housing": "Acreage and rural homes."
+  },
+  {
+   "name": "Toney",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Far northwest county on the Tennessee line.",
+   "best_for": "Land and quiet, with a straight shot east to Harvest and Madison.",
+   "trade_off": "Limited retail and services; everything is a drive.",
+   "housing": "Large-lot and rural residential."
+  },
+  {
+   "name": "Gurley",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Small eastern county town on the way to Scottsboro.",
+   "best_for": "Space and small-town living with city work access by 72 East.",
+   "trade_off": "Limited new inventory and the longest commute in this list to the arsenal.",
+   "housing": "Small-town grid plus acreage outside it."
+  },
+  {
+   "name": "Brownsboro",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Rural east county between Huntsville and Gurley.",
+   "best_for": "Acreage buyers who want the eastern school zone.",
+   "trade_off": "Fewest amenities on this list; plan on driving for everything.",
+   "housing": "Rural and large-lot residential."
+  },
+  {
+   "name": "Hazel Green",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "North county on the 231/431 corridor toward the Tennessee line.",
+   "best_for": "Buyers who want land, a small-town centre and a straight run up Rideout Road to Gate 9.",
+   "trade_off": "The 231/431 corridor carries the whole commute and it backs up; everything outside the crossroads is a drive.",
+   "housing": "Older town-core houses, acreage, and newer subdivisions on the edges."
+  },
+  {
+   "name": "Green Mountain",
+   "district": "Huntsville City Schools",
+   "confirmed": false,
+   "hook": "Wooded slopes on the south side of the mountain above Jones Valley.",
+   "best_for": "Buyers who want trees, elevation and larger lots, but still want the Huntsville City school system.",
+   "trade_off": "Huntsville City Schools does not run a bus route over the mountain \u2014 the Green Mountain Civic League documents this \u2014 so plan on driving children to school.",
+   "housing": "Custom homes on wooded acreage; very little new subdivision construction."
+  },
+  {
+   "name": "Ryland",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Northeast county farmland turning into subdivisions on the 72 corridor.",
+   "best_for": "New construction and land with a short run into downtown on Highway 72.",
+   "trade_off": "Growth outpacing roads and services; the K-8 Central School serves the Ryland area.",
+   "housing": "New-build subdivisions alongside working farmland."
+  },
+  {
+   "name": "Capshaw",
+   "district": "Limestone County Schools",
+   "confirmed": true,
+   "hook": "Northwest of Madison across the Limestone County line, on the 53 corridor.",
+   "best_for": "Buyers who want new construction a few minutes further out at a lower entry price.",
+   "trade_off": "It is a Limestone County address: the Madison County tag office is the wrong one, and the county school system applies \u2014 Creekside Elementary is the usual elementary.",
+   "housing": "New subdivisions and acreage lots."
+  },
+  {
+   "name": "Triana",
+   "district": "Madison City Schools",
+   "confirmed": true,
+   "hook": "Small town on the Tennessee River south of Madison.",
+   "best_for": "Madison City Schools at a lower entry price, with river access nearby.",
+   "trade_off": "The town attends Madison City Schools by agreement, not by geography \u2014 worth knowing if the agreement ever changes, and there is very little retail inside the town itself.",
+   "housing": "Modest older housing plus newer infill."
+  },
+  {
+   "name": "Ardmore",
+   "district": "Limestone County Schools",
+   "confirmed": true,
+   "hook": "On the Tennessee line \u2014 half the town is in Alabama and half in Tennessee.",
+   "best_for": "Space, a small-town high school and a straight run down Highway 53.",
+   "trade_off": "The longest commute in this list to Redstone, and crossing the state line changes your taxes, tags and licensing depending on which side you buy.",
+   "housing": "Rural and small-town housing on both sides of the line."
+  },
+  {
+   "name": "Athens",
+   "district": "Athens City Schools",
+   "confirmed": true,
+   "hook": "Limestone County seat with its own city school system and its own municipal utilities.",
+   "best_for": "A real downtown, a separate city district, and utilities on one city account rather than county-by-county guesswork.",
+   "trade_off": "Two districts exist in this county \u2014 Athens City and Limestone County \u2014 so the zone has to be checked address by address; and the drive to Redstone is 25\u201335 minutes.",
+   "housing": "Historic downtown houses through to new subdivisions."
+  },
+  {
+   "name": "East Limestone",
+   "district": "Limestone County Schools",
+   "confirmed": true,
+   "hook": "Between Athens and Madison on the 72 corridor.",
+   "best_for": "New construction within roughly 20 minutes of Research Park and Gate 9.",
+   "trade_off": "Unincorporated: private hauling, county services, and the Limestone County school zone rather than Madison's.",
+   "housing": "Subdivisions built over the last two decades."
+  },
+  {
+   "name": "Tanner",
+   "district": "Limestone County Schools",
+   "confirmed": true,
+   "hook": "South Limestone farming community on the 31 corridor, near the river.",
+   "best_for": "Land and price with a 20-minute run to either Athens or Decatur.",
+   "trade_off": "Thin retail, and the Mazda Toyota industrial corridor traffic runs right past it.",
+   "housing": "Rural acreage and older farmhouses."
+  },
+  {
+   "name": "Elkmont",
+   "district": "Limestone County Schools",
+   "confirmed": true,
+   "hook": "Rural north Limestone on the Tennessee line.",
+   "best_for": "Acreage and quiet, with a small-town school and a 30-minute run to Athens or Huntsville.",
+   "trade_off": "The longest drives to employment on this list, and minimal local services.",
+   "housing": "Farmhouse and large-lot rural housing."
+  },
+  {
+   "name": "Decatur",
+   "district": "Decatur City Schools",
+   "confirmed": true,
+   "hook": "Morgan County's river city, about 30 minutes west, with its own city schools and city utilities.",
+   "best_for": "Industrial and river-corridor jobs, or river living, with a city district of its own.",
+   "trade_off": "The commute to Huntsville employers is a genuine 30\u201340 minutes; this is a separate job market, not a Huntsville suburb.",
+   "housing": "Historic districts, established suburbs and river-front property."
+  },
+  {
+   "name": "Hartselle",
+   "district": "Hartselle City Schools",
+   "confirmed": true,
+   "hook": "Small city south of Decatur with its own school system and utilities.",
+   "best_for": "A small-city district and lower prices, if your work is in Morgan County.",
+   "trade_off": "Distance: the Huntsville commute from here is the longest of any community on this page.",
+   "housing": "Older street grid plus newer subdivisions."
+  },
+  {
+   "name": "Priceville",
+   "district": "Morgan County Schools",
+   "confirmed": true,
+   "hook": "I-65 exit 334 community between Decatur and Huntsville.",
+   "best_for": "A straight shot up I-65 to Huntsville with noticeably lower prices.",
+   "trade_off": "It is a Morgan County address \u2014 county schools, county tag office \u2014 and the I-65 drive is your commute, not a back road.",
+   "housing": "Subdivisions and rural lots."
+  },
+  {
+   "name": "Trinity",
+   "district": "Morgan County Schools",
+   "confirmed": true,
+   "hook": "West Morgan County, near the Wheeler National Wildlife Refuge.",
+   "best_for": "Quiet and land, with Decatur fifteen minutes away.",
+   "trade_off": "Furthest from Huntsville employers on this page, and amenities are minimal.",
+   "housing": "Rural housing and small subdivisions."
+  },
+  {
+   "name": "Somerville",
+   "district": "Morgan County Schools",
+   "confirmed": true,
+   "hook": "South Morgan County crossroads community.",
+   "best_for": "Acreage with a simple run to Decatur or down to I-65.",
+   "trade_off": "Very limited local retail \u2014 plan on driving for basics.",
+   "housing": "Rural acreage and farmhouses."
+  },
+  {
+   "name": "New Hope",
+   "district": "Madison County Schools",
+   "confirmed": true,
+   "hook": "Southeast Madison County town with its own high school and a working main street.",
+   "best_for": "Rural living with a quick run down 431 into south Huntsville.",
+   "trade_off": "The 431 corridor is the commute, and it congests; the mountain gap affects it too.",
+   "housing": "Town-grid houses, acreage, and newer subdivisions."
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huntsville commute calculator — drive times to Redstone Arsenal</title>
+<link rel="icon" href="assets/img/logo/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/logo/png/logo-round-mark-256.png">
+<meta name="description" content="Measure real driving routes from 36 Huntsville-area neighborhoods to Redstone Arsenal gates, NASA Marshall, Cummings Research Park and Mazda Toyota — off-peak minutes, peak-hour ranges and the annual cost of the drive.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/photos.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="tight"><div class="wrap">
+  <h1>Huntsville commute calculator</h1>
+  <p class="lead">Where you live is decided by the drive, not the subdivision brochure. Pick your workplace, tick the places you'd consider, and we measure the actual routes.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="tool">
+    <div class="row">
+      <div>
+        <label for="commute-dest">Where will you work?</label>
+        <select id="commute-dest"></select>
+      </div>
+      <div>
+        <label for="commute-days">Commute days per year</label>
+        <input id="commute-days" type="number" value="240" min="1" max="365">
+      </div>
+      <div>
+        <label for="commute-irs">Cost per mile (IRS rate)</label>
+        <input id="commute-irs" type="number" step="0.01" value="0.70">
+      </div>
+    </div>
+    <label>Places you'd consider living</label>
+    <div id="commute-homes" class="grid g3"></div>
+    <div id="commute-out" class="result">Measuring real driving routes…</div>
+  </div>
+
+  <div class="note"><b>Read this before you trust a number.</b> These times come from the road network itself — turn-by-turn routing on real roads, with no traffic model attached. Off-peak is what you'd get on a Sunday. The peak column applies a 1.35× multiplier as a rule of thumb, because Huntsville's bottlenecks are specific: I-565 and Research Park Boulevard inbound, 431 through Meridianville, the mountain gap on 431 out of Hampton Cove, and Gate 9 traffic on Rideout Road at shift change. For a real number, drive it at your actual start time before you make an offer.</div>
+
+  <h2>Why the destination list is what it is</h2>
+  <p>Huntsville employment is concentrated enough that your gate or campus determines your half of town:</p>
+  <ul class="check">
+    <li><b>Redstone Arsenal and everything inside it</b> — NASA Marshall, the FBI presence, the missile-defence and space commands, and thousands of contractor seats. Gate 9 on Rideout Road is the main visitor gate; non-DoD ID holders need a pass and a sponsor, so the first trip is a planning exercise, not a turnaround.</li>
+    <li><b>Cummings Research Park</b> — Adtran, Boeing, Lockheed Martin and the engineering-services shops, all on the west side. Living in Madison or Monrovia beats living downtown for this.</li>
+    <li><b>Mazda Toyota Manufacturing</b> — out in Limestone County near the Greenbrier area. Harvest, Monrovia and west Limestone are the practical housing pools.</li>
+    <li><b>Huntsville Hospital and the medical district</b> — the anchor for Blossomwood and Five Points.</li>
+    <li><b>Downtown</b> — the smaller but fastest-growing employment cluster, which is why the in-city neighbourhoods price the way they do.</li>
+  </ul>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="capture">
+    <h3>What can I afford at a 20-minute drive to my gate?</h3>
+    <p class="small">Send the commute rankings and the payment range that fits your budget. This is the question that actually decides the house.</p>
+    <form data-lead="commute-affordability">
+      <div class="row">
+        <div><label for="cm-name">Name</label><input id="cm-name" name="name" required></div>
+        <div><label for="cm-email">Email</label><input id="cm-email" name="email" type="email" required></div>
+      </div>
+      <div class="row">
+        <div><label for="cm-phone">Phone (optional)</label><input id="cm-phone" name="phone"></div>
+        <div><label for="cm-work">Work location</label><input id="cm-work" name="work_location" placeholder="e.g. Gate 9 (Redstone)"></div>
+      </div>
+      <button class="btn btn-primary" type="submit">Send my commute + budget range</button>
+      <div class="form-msg small" style="display:none;margin-top:10px"></div>
+    </form>
+  </div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Where the jobs actually are</h2>
+  <div class="photo-band" data-photos="ussrc,f1-engine,pathfinder,skyline-saturn-v"></div>
+  <p class="small muted">Photographs are freely licensed from Wikimedia Commons and credited under each image — <a href="photos.html">see all photo credits</a>.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Commute questions, with the numbers</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>How long is the commute from Madison to Redstone Arsenal?</h3>
+      <p class="small">About <b>6.8 miles and 11.6 minutes</b> off-peak to Gate 9 by live road-network routing. At the Gate 9 shift change, budget closer to 16 minutes — that corridor carries the heaviest peak factor in the metro.</p>
+    </div>
+    <div class="card">
+      <h3>Where does traffic actually back up here?</h3>
+      <p class="small">Four places, consistently: I-565 and Research Park Boulevard inbound, 431 through Meridianville, the mountain gap on 431 out of Hampton Cove, and Rideout Road at Gate 9 when a shift changes. Everywhere else, a Huntsville commute is shorter than a big-city commuter expects.</p>
+    </div>
+    <div class="card">
+      <h3>How far is Huntsville from other cities?</h3>
+      <p class="small">Measured off-peak on the road network: Birmingham 101 miles (~1 h 53), Chattanooga 102 miles (~2 h), Nashville 110 miles (~2 h 15), Atlanta 180 miles (~3 h 56) and Memphis 212 miles (~4 h 23). Distances are driving routes, not straight lines.</p>
+    </div>
+    <div class="card">
+      <h3>Do I need to live near my gate?</h3>
+      <p class="small">Not necessarily, but the arithmetic is stark at the extremes: the difference between an 11-minute and a 31-minute one-way drive is roughly 2.5 hours a week at five days, before fuel and before you count the days that run long. Value the time, then decide what it is worth per month.</p>
+    </div>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="assets/chrome.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/photos.js"></script>
+</body>
+</html>

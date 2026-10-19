@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Homes for sale in Huntsville, AL — search ValleyMLS listings</title>
+<link rel="icon" href="assets/img/logo/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/logo/png/logo-round-mark-256.png">
+<meta name="description" content="Search homes for sale in Huntsville, Madison and Madison County on ValleyMLS — the local MLS — set up price alerts for the areas you are watching, and get the payment math for anything you like.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/photos.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="tight"><div class="wrap">
+  <h1>Search homes for sale in Huntsville, AL</h1>
+  <p class="lead">Live listings come from ValleyMLS, the local multiple listing service — the same data local agents work from, rather than a national portal's approximation of it.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="grid g2" style="align-items:start">
+    <div class="card">
+      <div class="kicker">Step 1 — set your alerts</div>
+      <h3>Tell us what you're watching</h3>
+      <p class="small">Leave your email and the areas you care about. We'll send new-listing and price-change alerts for those neighborhoods — so the search comes back to you instead of you chasing it.</p>
+      <form data-lead="price-alerts">
+        <label for="hs-email">Email</label><input id="hs-email" name="email" type="email" required placeholder="you@example.com">
+        <div class="row">
+          <div><label for="hs-area">Area</label>
+            <select id="hs-area" name="area">
+              <option>Madison</option><option>Huntsville city</option><option>Hampton Cove / Big Cove</option>
+              <option>Owens Cross Roads</option><option>Harvest</option><option>Monrovia</option>
+              <option>Meridianville</option><option>Hazel Green</option><option>Green Mountain</option>
+              <option>New Hope</option><option>Anywhere in Madison County</option>
+              <option>Athens / Limestone County</option><option>Decatur / Hartselle / Morgan County</option>
+            </select>
+          </div>
+          <div><label for="hs-max">Maximum price</label><input id="hs-max" name="max_price" placeholder="$"></div>
+        </div>
+        <div class="row">
+          <div><label for="hs-beds">Minimum bedrooms</label><input id="hs-beds" name="min_beds" placeholder="3"></div>
+          <div><label for="hs-district">School district preference</label>
+            <select id="hs-district" name="district">
+              <option>No preference</option><option>Huntsville City</option><option>Madison City</option><option>Madison County</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-solid" type="submit">Set up my alerts</button>
+        <div class="form-msg small" style="display:none;margin-top:10px"></div>
+      </form>
+    </div>
+
+    <div class="card" style="background:#f8fbff;border-color:#cfe3f9">
+      <div class="kicker">Step 2 — search the listings</div>
+      <h3>Open ValleyMLS in a new window</h3>
+      <p>ValleyMLS is the local MLS serving the Huntsville area, and its public search shows the active inventory with photos, days on market and price history. We open it in a new window so this page — and whatever you've set up here — stays exactly where it is.</p>
+      <button class="btn btn-solid" data-mls style="font-size:16px;padding:14px 22px">Open ValleyMLS search</button>
+      <p class="small muted" style="margin-top:8px">Opens valleymls.com in a new window. If your browser blocks it, allow popups for this site.</p>
+      <div id="mls-note" class="small" style="display:none;margin-top:8px"></div>
+      <hr style="border:none;border-top:1px solid var(--line);margin:18px 0">
+      <p class="small"><b>Why a new window and not an embedded search?</b> A genuine MLS search feed requires the MLS to authorise a broker's IDX display, and for a lender-run site that authorisation isn't ours to hold. Rather than show a stale or partial feed, this site hands you to the source and does the work it can do properly: alerts, payment math, and the neighborhood context around each listing.</p>
+    </div>
+  </div>
+
+  <div class="note"><b>Before you look at any listing:</b> a $350,000 house with 5% down in Madison County at an illustrative 6.5% carries roughly $2,300–2,400/month all-in once Alabama property tax and insurance are included. Run the actual numbers on the <a href="rent-vs-buy.html">rent-vs-buy page</a> before you fall for a kitchen.</div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Search by what actually constrains you</h2>
+  <div class="grid g3">
+    <div class="card"><h3>By commute</h3><p class="small">Work at Gate 9 or Research Park? The west side — Madison, Monrovia, Providence — wins on time. Work downtown or at the hospital? Blossomwood and Five Points.</p><a class="btn btn-line" href="commute.html">Rank by commute</a></div>
+    <div class="card"><h3>By school district</h3><p class="small">Madison City Schools is a separate system from Madison County Schools, and both exist inside the same postcode range.</p><a class="btn btn-line" href="schools.html">Compare districts</a></div>
+    <div class="card"><h3>By monthly cost</h3><p class="small">Property tax varies by parcel, so the same price can carry differently two streets apart.</p><a class="btn btn-line" href="rent-vs-buy.html">Model the payment</a></div>
+  </div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>What you're buying into</h2>
+  <div class="photo-band" data-photos="downtown-skyline,big-spring-park,von-braun-arena,lowe-mill"></div>
+  <p class="small muted">Photographs are freely licensed from Wikimedia Commons and credited under each image — <a href="photos.html">see all photo credits</a>.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Homes-for-sale questions</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>What is the average home price in Huntsville, Alabama?</h3>
+      <p class="small">The metro median home value is <b>$331,800</b> (ACS 2024 1-year). That is a market midpoint for the whole metro — the price band that decides what you actually see is set by area, school district and build year, which is why the alerts below ask for the area rather than a single number.</p>
+      <p class="small"><a class="btn btn-line" href="cost-of-living.html">Compare with your city</a></p>
+    </div>
+    <div class="card">
+      <h3>How do I search homes for sale in Huntsville?</h3>
+      <p class="small">Use ValleyMLS — the local MLS, which is where the listings live — through the button above, and set price alerts here for the areas you care about. Set the alerts first: the alerts are what tell you a house exists in your band before the portals have indexed it.</p>
+    </div>
+    <div class="card">
+      <h3>Is the Huntsville market still competitive?</h3>
+      <p class="small">We do not publish market forecasts or call the market hot or cold. What you can verify yourself on any ValleyMLS listing is days on market, the price history and whether the price has been cut — those three tell you more about your specific band than a city-wide headline.</p>
+    </div>
+    <div class="card">
+      <h3>Should I get pre-qualified before I look?</h3>
+      <p class="small">Yes. Sellers here expect an offer to be attached to a lender letter, and knowing your payment band stops you looking at houses that will not work. Pre-qualification is a conversation about numbers, not an application, and it does not affect your credit.</p>
+      <p class="small"><a class="btn btn-solid" href="prequal.html">Start pre-qualification</a></p>
+    </div>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="assets/chrome.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/photos.js"></script>
+</body>
+</html>

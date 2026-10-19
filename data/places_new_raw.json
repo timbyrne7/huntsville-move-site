@@ -1,0 +1,130 @@
+{
+ "Hazel Green": {
+  "lat": 34.9264338,
+  "lon": -86.5667594,
+  "state": "Alabama",
+  "county": "Madison County",
+  "display": "Hazel Green, Madison County, Alabama, 35750, United States",
+  "query": "Hazel Green, Alabama"
+ },
+ "Green Mountain": {
+  "lat": 34.6250642,
+  "lon": -86.5233266,
+  "state": "Alabama",
+  "county": "Madison County",
+  "display": "Green Mountain Road Southeast, Camelot, Huntsville, Madison County, Alabama, 35803, United States",
+  "query": "Green Mountain, Madison County, Alabama"
+ },
+ "Ryland": {
+  "lat": 34.7698126,
+  "lon": -86.4808228,
+  "state": "Alabama",
+  "county": "Madison County",
+  "display": "Ryland, Madison County, Alabama, 35811, United States",
+  "query": "Ryland, Alabama"
+ },
+ "Capshaw": {
+  "lat": 34.7731456,
+  "lon": -86.7927781,
+  "state": "Alabama",
+  "county": "Limestone County",
+  "display": "Capshaw, Limestone County, Alabama, 35742, United States",
+  "query": "Capshaw, Alabama"
+ },
+ "Triana": {
+  "lat": 34.5853276,
+  "lon": -86.7356429,
+  "state": "Alabama",
+  "county": "Madison County",
+  "display": "Triana, Madison County, Alabama, United States",
+  "query": "Triana, Alabama"
+ },
+ "Ardmore": {
+  "lat": 34.9910605,
+  "lon": -86.8464256,
+  "state": "Alabama",
+  "county": "Limestone County",
+  "display": "Ardmore, Limestone County, Alabama, United States",
+  "query": "Ardmore, Limestone County, Alabama"
+ },
+ "Athens": {
+  "lat": 34.8045487,
+  "lon": -86.9711698,
+  "state": "Alabama",
+  "county": "Limestone County",
+  "display": "Athens, Limestone County, Alabama, 35613, United States",
+  "query": "Athens, Limestone County, Alabama"
+ },
+ "East Limestone": {
+  "lat": 34.7809229,
+  "lon": -86.8327797,
+  "state": "Alabama",
+  "county": "Limestone County",
+  "display": "East Limestone, Limestone County, Alabama, 35749, United States",
+  "query": "East Limestone, Alabama"
+ },
+ "Tanner": {
+  "lat": 34.7314787,
+  "lon": -86.9705632,
+  "state": "Alabama",
+  "county": "Limestone County",
+  "display": "Tanner, Limestone County, Alabama, 35671, United States",
+  "query": "Tanner, Alabama"
+ },
+ "Elkmont": {
+  "lat": 34.9289743,
+  "lon": -86.9738959,
+  "state": "Alabama",
+  "county": "Limestone County",
+  "display": "Elkmont, Limestone County, Alabama, 35620, United States",
+  "query": "Elkmont, Alabama"
+ },
+ "Decatur": {
+  "lat": 34.6060203,
+  "lon": -86.9838165,
+  "state": "Alabama",
+  "county": "Morgan County",
+  "display": "Decatur, Morgan County, Alabama, United States",
+  "query": "Decatur, Morgan County, Alabama"
+ },
+ "Hartselle": {
+  "lat": 34.4434282,
+  "lon": -86.9352842,
+  "state": "Alabama",
+  "county": "Morgan County",
+  "display": "Hartselle, Morgan County, Alabama, 35640, United States",
+  "query": "Hartselle, Alabama"
+ },
+ "Priceville": {
+  "lat": 34.5250932,
+  "lon": -86.8947271,
+  "state": "Alabama",
+  "county": "Morgan County",
+  "display": "Priceville, Morgan County, Alabama, United States",
+  "query": "Priceville, Alabama"
+ },
+ "Trinity": {
+  "lat": 34.6067588,
+  "lon": -87.0883459,
+  "state": "Alabama",
+  "county": "Morgan County",
+  "display": "Trinity, Morgan County, Alabama, United States",
+  "query": "Trinity, Morgan County, Alabama"
+ },
+ "Somerville": {
+  "lat": 34.4731491,
+  "lon": -86.798612,
+  "state": "Alabama",
+  "county": "Morgan County",
+  "display": "Somerville, Morgan County, Alabama, United States",
+  "query": "Somerville, Morgan County, Alabama"
+ },
+ "New Hope": {
+  "lat": 34.5370339,
+  "lon": -86.3944308,
+  "state": "Alabama",
+  "county": "Madison County",
+  "display": "New Hope, Madison County, Alabama, 35760, United States",
+  "query": "New Hope, Madison County, Alabama"
+ }
+}

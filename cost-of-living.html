@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cost of living in Huntsville, AL: rent, home prices and property tax</title>
+<link rel="icon" href="assets/img/logo/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/logo/png/logo-round-mark-256.png">
+<meta name="description" content="Cost of living in Huntsville, Alabama compared with your city: median rent, home prices, household income and property tax (median $1,405 a year), plus an estimated house payment for all 57 metros.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/photos.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="tight"><div class="wrap">
+  <h1>Cost of living in Huntsville, AL — compared with your city</h1>
+  <p class="lead">Pick where you live now. We put the Census medians side by side and estimate what a house payment looks like in each — because the property-tax line, not the sticker price, is usually the surprise.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="tool">
+    <div class="row">
+      <div>
+        <label for="cost-metro">Where you live now</label>
+        <select id="cost-metro"></select>
+      </div>
+      <div>
+        <label for="cost-size">Home size to compare</label>
+        <select id="cost-size">
+          <option value="2">2 bedrooms</option>
+          <option value="3" selected>3 bedrooms</option>
+          <option value="4">4+ bedrooms</option>
+        </select>
+      </div>
+    </div>
+    <div id="cost-out" class="result">Loading Census data…</div>
+  </div>
+
+  <h2>What the comparison actually tells you</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Property tax is the compounding difference</h3>
+      <p>Alabama's property tax is low in national terms, and the ACS figure shows it directly: the median mortgaged household in the Huntsville metro pays roughly <b>$1,405 a year</b>, while the same household in the Austin metro pays about <b>$7,403</b> — on a more expensive house. Over ten years that gap is a car, a kitchen, or a decade of your child's activities.</p>
+    </div>
+    <div class="card">
+      <h3>Income matters as much as prices</h3>
+      <p>Huntsville's median household income sits near $87,000, which is high for the cost of living here — engineering and defence pay scales do the heavy lifting. Comparing prices without comparing local wages is how people talk themselves out of a good move, or into a bad one.</p>
+    </div>
+    <div class="card">
+      <h3>State income tax cuts the other way</h3>
+      <p>Alabama levies a state income tax on wages. Tennessee, Texas, Florida, Washington and Nevada do not. If you're moving from one of those states, your take-home pay will change — factor it before you compare gross salary offers.</p>
+    </div>
+    <div class="card">
+      <h3>Rent is a real number here</h3>
+      <p>Median gross rent of about $1,283 in the Huntsville metro is what a renter should budget as a midpoint. New-build apartments in MidCity and west Madison run above it; older duplexes and county rentals run below.</p>
+    </div>
+  </div>
+
+  <div class="note"><b>Where these numbers come from.</b> All figures are US Census Bureau American Community Survey 2024 1-year estimates pulled through the Census Reporter API for this prototype: B25064 (median gross rent), B25077 (median home value), B19013 (median household income) and B25103 (median real estate taxes paid on mortgaged owner-occupied units). These are metro medians — they describe a market, not a house.</div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="capture">
+    <h3>Want the full comparison as a worksheet?</h3>
+    <p class="small">We'll send the city-to-city comparison with the payment math for your price range — the same numbers on this page, laid out so you can take them to a lender.</p>
+    <form data-lead="cost-comparison">
+      <div class="row">
+        <div><label for="cl-email">Email</label><input id="cl-email" name="email" type="email" required></div>
+        <div><label for="cl-city">Moving from</label><input id="cl-city" name="from_city" placeholder="City, State"></div>
+      </div>
+      <button class="btn btn-primary" type="submit">Send the comparison</button>
+      <div class="form-msg small" style="display:none;margin-top:10px"></div>
+    </form>
+  </div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>The city, at street level</h2>
+  <div class="photo-band" data-photos="skyline-saturn-v,downtown-panorama,botanical-flower,monte-sano-overlook"></div>
+  <p class="small muted">Photographs are freely licensed from Wikimedia Commons and credited under each image — <a href="photos.html">see all photo credits</a>.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Cost-of-living questions, with sourced numbers</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>What is the cost of living in Huntsville, Alabama?</h3>
+      <p class="small">The metro-level figures from the 2024 ACS 1-year estimates already on this page: median home value <b>$331,800</b>, median gross rent <b>$1,283</b> a month, median household income around <b>$87,000</b>, and median property tax of <b>$1,405</b> a year for mortgaged owner-occupied homes. Metro medians describe a market, not a specific house.</p>
+    </div>
+    <div class="card">
+      <h3>How much are property taxes in Huntsville?</h3>
+      <p class="small">Worked back from the ACS figures, the median household pays about <b>0.42% of home value</b> a year in property tax — among the lowest effective rates in the country. Your own figure is assessed per parcel, so it changes with the county and the assessment, not only the price.</p>
+      <p class="small muted">Madison County's tax office publishes the parcel-level detail: <a href="https://www.madisoncountyal.gov/" target="_blank" rel="noopener">madisoncountyal.gov</a></p>
+    </div>
+    <div class="card">
+      <h3>Is rent expensive in Huntsville?</h3>
+      <p class="small">Median gross rent of $1,283 makes the metro cheaper than most places movers come from. Within the market, new-build apartments in MidCity and west Madison sit above that median and older duplexes and county rentals sit below it — the spread is wide enough that location matters more than the city average.</p>
+    </div>
+    <div class="card">
+      <h3>Where does the money difference actually come from?</h3>
+      <p class="small">Two lines: property tax, where this metro is far below the metros movers arrive from, and house price per square foot. Against that, Alabama levies a state income tax — worth modelling if you are coming from Tennessee, Texas, Florida or Washington.</p>
+    </div>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="assets/chrome.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/photos.js"></script>
+</body>
+</html>

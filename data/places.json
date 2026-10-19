@@ -1,0 +1,294 @@
+{
+ "neighborhoods": [
+  {
+   "name": "Downtown Huntsville",
+   "lat": 34.7302567,
+   "lon": -86.5850583,
+   "county": "Madison County"
+  },
+  {
+   "name": "Five Points",
+   "lat": 34.7387021,
+   "lon": -86.5769368,
+   "county": "Madison County"
+  },
+  {
+   "name": "Blossomwood",
+   "lat": 34.7382765,
+   "lon": -86.6359895,
+   "county": "Madison County"
+  },
+  {
+   "name": "Twickenham / Old Town",
+   "lat": 34.72925,
+   "lon": -86.5789815,
+   "county": "Madison County"
+  },
+  {
+   "name": "Jones Valley",
+   "lat": 34.6178106,
+   "lon": -86.5407699,
+   "county": "Madison County"
+  },
+  {
+   "name": "South Huntsville",
+   "lat": 34.6728786,
+   "lon": -86.5676068,
+   "county": "Madison County"
+  },
+  {
+   "name": "Research Park",
+   "lat": 34.725833,
+   "lon": -86.6835471,
+   "county": "Madison County"
+  },
+  {
+   "name": "Providence",
+   "lat": 34.7581491,
+   "lon": -86.6949999,
+   "county": "Madison County"
+  },
+  {
+   "name": "MidCity",
+   "lat": 34.7366321,
+   "lon": -86.6655193,
+   "county": "Madison County"
+  },
+  {
+   "name": "Hampton Cove",
+   "lat": 34.6663626,
+   "lon": -86.4861042,
+   "county": "Madison County"
+  },
+  {
+   "name": "Big Cove",
+   "lat": 34.6673131,
+   "lon": -86.4888778,
+   "county": "Madison County"
+  },
+  {
+   "name": "Owens Cross Roads",
+   "lat": 34.5881461,
+   "lon": -86.4588768,
+   "county": "Madison County"
+  },
+  {
+   "name": "Madison",
+   "lat": 34.7009668,
+   "lon": -86.7430313,
+   "county": "Madison County"
+  },
+  {
+   "name": "Harvest",
+   "lat": 34.8558725,
+   "lon": -86.7491214,
+   "county": "Madison County"
+  },
+  {
+   "name": "Monrovia",
+   "lat": 34.786479,
+   "lon": -86.7138863,
+   "county": "Madison County"
+  },
+  {
+   "name": "Meridianville",
+   "lat": 34.8703223,
+   "lon": -86.5713609,
+   "county": "Madison County"
+  },
+  {
+   "name": "New Market",
+   "lat": 34.895762,
+   "lon": -86.4150422,
+   "county": "Madison County"
+  },
+  {
+   "name": "Toney",
+   "lat": 34.8981438,
+   "lon": -86.7335699,
+   "county": "Madison County"
+  },
+  {
+   "name": "Gurley",
+   "lat": 34.7017558,
+   "lon": -86.3758201,
+   "county": "Madison County"
+  },
+  {
+   "name": "Brownsboro",
+   "lat": 34.7492568,
+   "lon": -86.443044,
+   "county": "Madison County"
+  },
+  {
+   "name": "Hazel Green",
+   "lat": 34.9264338,
+   "lon": -86.5667594,
+   "county": "Madison County"
+  },
+  {
+   "name": "Green Mountain",
+   "lat": 34.6250642,
+   "lon": -86.5233266,
+   "county": "Madison County"
+  },
+  {
+   "name": "Ryland",
+   "lat": 34.7698126,
+   "lon": -86.4808228,
+   "county": "Madison County"
+  },
+  {
+   "name": "Capshaw",
+   "lat": 34.7731456,
+   "lon": -86.7927781,
+   "county": "Limestone County"
+  },
+  {
+   "name": "Triana",
+   "lat": 34.5853276,
+   "lon": -86.7356429,
+   "county": "Madison County"
+  },
+  {
+   "name": "Ardmore",
+   "lat": 34.9910605,
+   "lon": -86.8464256,
+   "county": "Limestone County"
+  },
+  {
+   "name": "Athens",
+   "lat": 34.8045487,
+   "lon": -86.9711698,
+   "county": "Limestone County"
+  },
+  {
+   "name": "East Limestone",
+   "lat": 34.7809229,
+   "lon": -86.8327797,
+   "county": "Limestone County"
+  },
+  {
+   "name": "Tanner",
+   "lat": 34.7314787,
+   "lon": -86.9705632,
+   "county": "Limestone County"
+  },
+  {
+   "name": "Elkmont",
+   "lat": 34.9289743,
+   "lon": -86.9738959,
+   "county": "Limestone County"
+  },
+  {
+   "name": "Decatur",
+   "lat": 34.6060203,
+   "lon": -86.9838165,
+   "county": "Morgan County"
+  },
+  {
+   "name": "Hartselle",
+   "lat": 34.4434282,
+   "lon": -86.9352842,
+   "county": "Morgan County"
+  },
+  {
+   "name": "Priceville",
+   "lat": 34.5250932,
+   "lon": -86.8947271,
+   "county": "Morgan County"
+  },
+  {
+   "name": "Trinity",
+   "lat": 34.6067588,
+   "lon": -87.0883459,
+   "county": "Morgan County"
+  },
+  {
+   "name": "Somerville",
+   "lat": 34.4731491,
+   "lon": -86.798612,
+   "county": "Morgan County"
+  },
+  {
+   "name": "New Hope",
+   "lat": 34.5370339,
+   "lon": -86.3944308,
+   "county": "Madison County"
+  }
+ ],
+ "employers": [
+  {
+   "name": "Redstone Arsenal \u2013 Gate 9 (main)",
+   "lat": 34.6860032,
+   "lon": -86.6719727,
+   "note": "Rideout Rd \u2014 main visitor gate"
+  },
+  {
+   "name": "Redstone Arsenal \u2013 base interior",
+   "lat": 34.6297568,
+   "lon": -86.6535802,
+   "note": "access via one of the gates"
+  },
+  {
+   "name": "Redstone Gateway",
+   "lat": 34.6976413,
+   "lon": -86.6755097,
+   "note": "contractor campus at Gate 9"
+  },
+  {
+   "name": "NASA Marshall (MSFC)",
+   "lat": 34.6492808,
+   "lon": -86.6714816,
+   "note": "on Redstone Arsenal"
+  },
+  {
+   "name": "Mazda Toyota Manufacturing",
+   "lat": 34.6816315,
+   "lon": -86.8456873,
+   "note": "Limestone County"
+  },
+  {
+   "name": "Lockheed Martin (Bradford Dr)",
+   "lat": 34.7272933,
+   "lon": -86.6453694,
+   "note": "Huntsville"
+  },
+  {
+   "name": "Blue Origin (Wall Triana)",
+   "lat": 34.6517164,
+   "lon": -86.7613652,
+   "note": "Huntsville"
+  },
+  {
+   "name": "Adtran (Explorer Blvd)",
+   "lat": 34.7254031,
+   "lon": -86.679096,
+   "note": "Cummings Research Park"
+  },
+  {
+   "name": "Cummings Research Park",
+   "lat": 34.725833,
+   "lon": -86.6835471,
+   "note": "research & engineering hub"
+  },
+  {
+   "name": "Huntsville Hospital",
+   "lat": 34.7205286,
+   "lon": -86.5809968,
+   "note": "Medical District"
+  },
+  {
+   "name": "Huntsville International Airport",
+   "lat": 34.647108,
+   "lon": -86.7750132,
+   "note": "Jetplex industrial area"
+  },
+  {
+   "name": "Downtown Huntsville (CBD)",
+   "lat": 34.7302567,
+   "lon": -86.5850583,
+   "note": "courthouse square"
+  }
+ ]
+}

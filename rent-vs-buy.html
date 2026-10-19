@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rent vs buy in Huntsville, AL — and what your BAH covers</title>
+<link rel="icon" href="assets/img/logo/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/logo/png/logo-round-mark-256.png">
+<meta name="description" content="Model owning against renting in Huntsville with all-in monthly cost, interest paid, break-even month and what your BAH covers. VA and conventional side by side.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/photos.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="tight"><div class="wrap">
+  <h1>Rent vs buy in Huntsville — and what your BAH actually covers</h1>
+  <p class="lead">The honest version: owning costs more per month than renting for the first years in most Huntsville scenarios. What decides it is how long you stay, what the tax and insurance line looks like, and whether your BAH is doing the work.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="tool">
+    <h2 style="margin-top:0">Your scenario</h2>
+    <div class="row">
+      <div><label for="rb-rent">Rent you'd pay today</label><input id="rb-rent" type="number" value="1500"></div>
+      <div><label for="rb-price">Purchase price</label><input id="rb-price" type="number" value="350000"></div>
+      <div><label for="rb-down">Down payment (%)</label><input id="rb-down" type="number" value="5" step="0.5"></div>
+      <div><label for="rb-rate">Interest rate (%)</label><input id="rb-rate" type="number" value="6.5" step="0.125"></div>
+    </div>
+    <div class="row">
+      <div><label for="rb-term">Term (years)</label><input id="rb-term" type="number" value="30"></div>
+      <div><label for="rb-tax">Property tax rate (% / yr)</label><input id="rb-tax" type="number" value="0.41" step="0.01"></div>
+      <div><label for="rb-ins">Insurance ($ / yr)</label><input id="rb-ins" type="number" value="1800"></div>
+      <div><label for="rb-hoa">HOA ($ / month)</label><input id="rb-hoa" type="number" value="0"></div>
+    </div>
+    <div class="row">
+      <div><label for="rb-maint">Maintenance (% of price / yr)</label><input id="rb-maint" type="number" value="1" step="0.1"></div>
+      <div><label for="rb-years">Years you expect to stay</label><input id="rb-years" type="number" value="7"></div>
+      <div><label for="rb-appr">Appreciation assumption (%/yr)</label><input id="rb-appr" type="number" value="3" step="0.25"></div>
+      <div><label for="rb-invest">Return if you invested instead (%/yr)</label><input id="rb-invest" type="number" value="4" step="0.25"></div>
+    </div>
+    <div class="row" style="align-items:end">
+      <div><label for="rb-bah">BAH (monthly, from the official DoD table)</label><input id="rb-bah" type="number" value="0"></div>
+      <div>
+        <label style="display:flex;align-items:center;gap:8px"><input id="rb-va" type="checkbox" style="width:auto"> VA loan (typically 0% down)</label>
+        <p class="small muted" style="margin:6px 0 0">Look your rate up by grade and dependents in the official DoD calculator — <a href="https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/" target="_blank" rel="noopener">travel.dod.mil BAH tables</a>. This prototype deliberately does not publish BAH figures it cannot verify against that table.</p>
+      </div>
+    </div>
+    <div id="rb-out" class="result"></div>
+  </div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>What this model does and does not know</h2>
+  <div class="grid g2">
+    <div class="card"><h3>It does know</h3>
+      <ul class="check">
+        <li>The full monthly carry: principal, interest, Alabama property tax, insurance, HOA and a maintenance allowance.</li>
+        <li>How much interest leaves your pocket over the horizon you set, and how much of the note you still owe at the end.</li>
+        <li>The break-even month against renting today at your numbers, including selling costs when you leave.</li>
+        <li>What your monthly cost looks like after BAH — the number service members actually budget from.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>It does not know</h3>
+      <ul class="check">
+        <li>Your real rate. The rate field is an example; a lender's quote, and the APR, is the only number that counts.</li>
+        <li>Your actual Alabama tax rate, which is assessed per parcel and can differ from the metro average used here.</li>
+        <li>Whether the house appraises, what the inspection finds, or what your insurance will actually cost on that specific roof and age of HVAC.</li>
+        <li>Your tax picture — mortgage interest deductibility depends on your filing situation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Why people here keep buying</h2>
+  <p>Three local facts push Huntsville renters toward owning faster than a generic calculator suggests: property taxes are low enough that the tax line rarely decides a deal; the engineering and defence wage base is stable enough that seven years is a safe assumption; and the rent-vs-buy math flips inside three to four years in most price bands when rents are rising. The counterweight is inventory — the neighbourhoods people most want, Five Points, Blossomwood and Madison's west side, are thin and move fast.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <div class="capture">
+    <h3>Want your real numbers instead of an example rate?</h3>
+    <p class="small">Tell us the price range and timeline. We'll come back with the payment at a real quote for your situation — VA, FHA or conventional — and what it takes to get there.</p>
+    <form data-lead="prequal">
+      <div class="row">
+        <div><label for="rb-name">Name</label><input id="rb-name" name="name" required></div>
+        <div><label for="rb-email">Email</label><input id="rb-email" name="email" type="email" required></div>
+      </div>
+      <div class="row">
+        <div><label for="rb-phone">Phone</label><input id="rb-phone" name="phone"></div>
+        <div><label for="rb-price-range">Price range</label><input id="rb-price-range" name="price_range" placeholder="e.g. $300–375k"></div>
+        <div><label for="rb-timeline">Timeline</label>
+          <select id="rb-timeline" name="timeline"><option>0–3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just researching</option></select>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Run my real numbers</button>
+      <div class="form-msg small" style="display:none;margin-top:10px"></div>
+    </form>
+  </div>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Why people put down roots here</h2>
+  <div class="photo-band" data-photos="depot,von-braun-center,monte-sano-lodge,big-spring-park-view"></div>
+  <p class="small muted">Photographs are freely licensed from Wikimedia Commons and credited under each image — <a href="photos.html">see all photo credits</a>.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Rent or buy — the questions behind the model</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Is it better to rent or buy in Huntsville?</h3>
+      <p class="small">It depends on how long you stay, not on the city. The model above computes your own break-even month — the point where buying beats renting once selling costs are counted. Short horizon, rent. Long horizon, buy, and the low Alabama property tax is a real part of why.</p>
+    </div>
+    <div class="card">
+      <h3>Does BAH cover a mortgage in Huntsville?</h3>
+      <p class="small">Frequently it covers the principal-and-interest portion, because home values here are low relative to typical BAH. Whether it covers your all-in payment depends on tax, insurance and your rate — put your own BAH figure into the field above and read the after-BAH line.</p>
+      <p class="small"><a class="btn btn-line" href="redstone-arsenal-pcs-va-loans.html">PCS and VA loan page</a></p>
+    </div>
+    <div class="card">
+      <h3>How much do I need saved to buy here?</h3>
+      <p class="small">The down payment depends on the loan: VA financing is typically zero down, conventional under 20% carries mortgage insurance, FHA has lower credit thresholds. On top of that, budget closing costs, the first year of insurance and a repair reserve on an older roof — the last one is the item movers under-budget most often.</p>
+    </div>
+    <div class="card">
+      <h3>Should I rent first before buying?</h3>
+      <p class="small">Two cases where it usually pays: you have not yet driven your commute at your real start time, or you have not confirmed which school district serves the neighbourhood. Both are cheaper to check from a rental than to fix from a purchase.</p>
+    </div>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="assets/chrome.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/photos.js"></script>
+</body>
+</html>

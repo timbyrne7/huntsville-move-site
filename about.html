@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How this site works — sources, disclosures and what we won't fake</title>
+<link rel="icon" href="assets/img/logo/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/logo/png/logo-round-mark-256.png">
+<meta name="description" content="Sources, methods and disclosures for Rocket City Move: where every figure comes from, what we deliberately do not publish, and how the mortgage relationship works.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/photos.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="tight"><div class="wrap">
+  <h1>How this site works</h1>
+  <p class="lead">Short version: the numbers are cited, the school zones link to the official locators, the live BAH rates are never quoted from memory, and the mortgage relationship is disclosed in plain language.</p>
+</div></section>
+
+<section class="tight"><div class="wrap">
+  <h2>Where the data comes from</h2>
+  <table>
+    <thead><tr><th>What</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Rent, home value, household income, property tax paid (57 metros)</td><td>US Census Bureau, American Community Survey 2024 1-year estimates (tables B25064, B25077, B19013, B25103), retrieved via the Census Reporter API</td></tr>
+      <tr><td>Commute distance and driving time</td><td>Live routing on the OpenStreetMap road network (OSRM). No traffic model — peak-hour figures are labelled as an estimate</td></tr>
+      <tr><td>School district coverage, enrollment (where shown)</td><td>Each district's own website; performance questions link to the Alabama State Department of Education report card</td></tr>
+      <tr><td>School zone boundaries for a specific address</td><td>Official district and city GIS locators — we link to them rather than redraw them</td></tr>
+      <tr><td>Utilities, tag and title, licensing, voter registration, pet licensing</td><td>The city, county, state agency or utility that owns the process, linked per step</td></tr>
+      <tr><td>BAH</td><td>Not published here. Use the official DoD rate table, linked from the rent-vs-buy tool</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What we deliberately do not publish</h2>
+  <ul class="check">
+    <li><b>School ratings or "best school" rankings.</b> District-reported data and the state report card, or nothing.</li>
+    <li><b>Live mortgage rates presented as offers.</b> Example rates are labelled as examples until a licensed quote exists.</li>
+    <li><b>BAH figures.</b> They change annually and by grade; a stale number is worse than none.</li>
+    <li><b>MLS listing data.</b> Displaying it requires broker-authorised IDX access. Instead we hand you to ValleyMLS directly and use the value we can add: alerts, payment math and context.</li>
+  </ul>
+
+  <h2>How this site makes money</h2>
+  <p>One way: it is operated by a mortgage professional in Huntsville, and people who use the tools here can ask to be pre-qualified. That's the entire model. We are not paid by agents, insurers, builders or the MLS for placement, and we do not sell contact details.</p>
+
+  <h2>Prototype status</h2>
+  <p>This build is a preview. Before any public launch the following are mandatory: a licensed-entity review of every payment calculation and published figure, the correct NMLS ID and Equal Housing disclosures, an APR/payment disclaimer on every output that shows a payment, a written privacy policy and TCPA-compliant consent language on every capture form, and a decision on the domain. Until then, everything numeric here should be treated as a model, not a quote.</p>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="assets/chrome.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/photos.js"></script>
+</body>
+</html>

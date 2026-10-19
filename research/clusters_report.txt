@@ -1,0 +1,363 @@
+kept=2245 dropped=798 clusters=18
+
+=== uncategorised  (852 kws)
+     78  seeds=34 rank= 1  is huntsville a good place to live
+     76  seeds=33 rank= 1  living in huntsville alabama
+     64  seeds=27 rank= 1  why move to huntsville alabama
+     64  seeds=27 rank= 1  why move to huntsville al
+     64  seeds=27 rank= 1  living in huntsville alabama pros and cons
+     63  seeds=27 rank= 2  living in huntsville alabama reddit
+     58  seeds=24 rank= 1  living in huntsville reddit
+     57  seeds=24 rank= 2  living in huntsville
+     44  seeds=17 rank= 1  living in huntsville al
+     29  seeds=11 rank= 4  life in huntsville alabama
+     25  seeds=11 rank= 8  places to live in huntsville alabama
+     22  seeds=12 rank=13  huntsville alabama good place to live
+     18  seeds= 4 rank= 1  huntsville al county
+     18  seeds= 5 rank= 3  huntsville alabama living social
+     16  seeds= 3 rank= 1  huntsville al population
+     16  seeds= 3 rank= 1  huntsville al airport
+     16  seeds= 3 rank= 1  independent living in huntsville al
+     15  seeds= 6 rank= 8  moving services huntsville al
+
+=== neighborhoods  (417 kws)
+     37  seeds=16 rank= 6  where to live in huntsville al
+     34  seeds=13 rank= 3  best places to live in huntsville
+     28  seeds=12 rank= 7  huntsville alabama best place to live
+     27  seeds= 9 rank= 2  best areas to live in huntsville al
+     20  seeds= 9 rank= 9  best area to live in huntsville alabama
+     19  seeds=10 rank=12  best place to live in huntsville al
+     16  seeds= 3 rank= 1  best neighborhoods in huntsville al
+     16  seeds= 3 rank= 1  huntsville al to madison al
+     15  seeds= 3 rank= 2  huntsville al neighborhoods map
+     14  seeds= 3 rank= 3  best neighborhoods in huntsville
+     14  seeds= 2 rank= 1  huntsville al downtown
+     14  seeds= 2 rank= 1  huntsville al downtown restaurant mazzios
+     14  seeds= 2 rank= 1  huntsville al best neighborhoods
+     14  seeds= 2 rank= 1  best places to live in huntsville al
+     14  seeds= 2 rank= 1  living in madison alabama
+     14  seeds= 2 rank= 1  apartments in downtown huntsville
+     14  seeds= 2 rank= 1  five at five points
+     14  seeds= 2 rank= 1  property for sale in twickenham village
+
+=== jobs-employers  (177 kws)
+     16  seeds= 3 rank= 1  huntsville al jobs
+     14  seeds= 2 rank= 1  getting access to redstone arsenal
+     13  seeds= 2 rank= 2  huntsville al jobs carpenter apprentice
+     13  seeds= 2 rank= 2  redstone arsenal housing office
+     12  seeds= 1 rank= 1  redstone arsenal community
+     12  seeds= 2 rank= 3  huntsville al jobs full time
+     12  seeds= 1 rank= 1  huntsville al employers
+     12  seeds= 1 rank= 1  mazda toyota huntsville jobs
+     12  seeds= 1 rank= 1  mazda toyota huntsville jobs hiring
+     12  seeds= 1 rank= 1  pcs redstone arsenal
+     12  seeds= 1 rank= 1  redstone arsenal housing
+     12  seeds= 2 rank= 3  redstone arsenal housing for retirees
+     12  seeds= 1 rank= 1  redstone arsenal bah
+     12  seeds= 1 rank= 1  redstone arsenal on post housing
+     12  seeds= 1 rank= 1  redstone arsenal on base housing
+     11  seeds= 2 rank= 4  huntsville al school district jobs
+     11  seeds= 1 rank= 2  redstone arsenal community activity center
+     11  seeds= 1 rank= 2  transportation office redstone arsenal
+
+=== schools  (175 kws)
+     16  seeds= 4 rank= 3  huntsville al school district
+     15  seeds= 3 rank= 2  best school districts near huntsville al
+     14  seeds= 2 rank= 1  huntsville al schools
+     14  seeds= 2 rank= 1  huntsville al school schedule
+     14  seeds= 2 rank= 1  huntsville al school zones
+     13  seeds= 2 rank= 2  huntsville al school start date 2026
+     13  seeds= 2 rank= 2  huntsville al school zone locator
+     12  seeds= 2 rank= 3  huntsville al school system
+     12  seeds= 1 rank= 1  huntsville city schools
+     12  seeds= 1 rank= 1  madison city schools
+     12  seeds= 1 rank= 1  best school districts in huntsville alabama
+     12  seeds= 2 rank= 3  best school district in huntsville alabama
+     12  seeds= 1 rank= 1  huntsville al school ratings
+     12  seeds= 1 rank= 1  madison county schools alabama
+     12  seeds= 1 rank= 1  limestone county schools
+     11  seeds= 1 rank= 2  huntsville al schools calendar
+     11  seeds= 2 rank= 4  huntsville al school district jobs
+     11  seeds= 2 rank= 4  huntsville al school closings
+
+=== lifestyle  (129 kws)
+     24  seeds= 8 rank= 3  is huntsville safe to live
+     18  seeds= 4 rank= 1  huntsville al weather
+     16  seeds= 3 rank= 1  huntsville al crime rate
+     15  seeds= 3 rank= 2  huntsville al weather 10 day
+     15  seeds= 3 rank= 2  huntsville al channel 48 weather
+     14  seeds= 2 rank= 1  huntsville al hotels
+     13  seeds= 2 rank= 2  huntsville alabama weather
+     13  seeds= 2 rank= 2  huntsville al crime rate map
+     13  seeds= 2 rank= 2  huntsville al crime map
+     12  seeds= 2 rank= 3  safest places to live in huntsville al
+     12  seeds= 2 rank= 3  huntsville al crime rate 2025
+     12  seeds= 1 rank= 1  huntsville alabama tornado
+     12  seeds= 1 rank= 1  huntsville al humidity
+     12  seeds= 1 rank= 1  safest neighborhoods in huntsville al
+     12  seeds= 1 rank= 1  safest neighborhoods in huntsville alabama
+     12  seeds= 1 rank= 1  huntsville hospital pre admission testing
+     12  seeds= 1 rank= 1  green mountain outdoor living
+     11  seeds= 2 rank= 4  huntsville al weather 10-day
+
+=== military-pcs  (123 kws)
+     14  seeds= 2 rank= 1  getting access to redstone arsenal
+     13  seeds= 2 rank= 2  redstone arsenal housing office
+     12  seeds= 1 rank= 1  redstone arsenal community
+     12  seeds= 1 rank= 1  pcs redstone arsenal
+     12  seeds= 1 rank= 1  redstone arsenal housing
+     12  seeds= 2 rank= 3  redstone arsenal housing for retirees
+     12  seeds= 1 rank= 1  redstone arsenal bah
+     12  seeds= 1 rank= 1  huntsville va location
+     12  seeds= 1 rank= 1  redstone arsenal on post housing
+     12  seeds= 1 rank= 1  redstone arsenal on base housing
+     12  seeds= 1 rank= 1  huntsville al va clinic
+     11  seeds= 1 rank= 2  redstone arsenal community activity center
+     11  seeds= 1 rank= 2  transportation office redstone arsenal
+     11  seeds= 2 rank= 4  map of redstone arsenal
+     11  seeds= 1 rank= 2  redstone arsenal px hours
+     11  seeds= 1 rank= 2  redstone arsenal pcs office
+     11  seeds= 2 rank= 4  redstone arsenal military housing
+     11  seeds= 1 rank= 2  redstone arsenal bah rate
+
+=== utilities-setup  (102 kws)
+     17  seeds= 4 rank= 2  huntsville al utilities website
+     15  seeds= 3 rank= 2  huntsville al utilities phone number
+     14  seeds= 2 rank= 1  huntsville al utilities
+     12  seeds= 1 rank= 1  huntsville utilities setup
+     12  seeds= 1 rank= 1  huntsville al water bill
+     12  seeds= 2 rank= 3  huntsville al water department
+     12  seeds= 1 rank= 1  huntsville al internet providers
+     12  seeds= 1 rank= 1  internet providers in huntsville al
+     12  seeds= 2 rank= 3  huntsville al internet plans
+     12  seeds= 1 rank= 1  huntsville al trash pickup schedule
+     12  seeds= 3 rank= 5  huntsville utilities moving
+     11  seeds= 1 rank= 2  huntsville utilities account setup
+     11  seeds= 1 rank= 2  huntsville al utility bill increase
+     11  seeds= 1 rank= 2  average water bill huntsville al
+     11  seeds= 1 rank= 2  internet providers in alabama
+     11  seeds= 1 rank= 2  internet provider huntsville al
+     11  seeds= 2 rank= 4  huntsville al internet deals
+     11  seeds= 1 rank= 2  huntsville al trash pickup
+
+=== relocation-guide  (90 kws)
+     94  seeds=42 rank= 1  moving to huntsville alabama
+     74  seeds=33 rank= 3  people moving to huntsville alabama everyday
+     72  seeds=31 rank= 1  moving to huntsville al
+     66  seeds=28 rank= 1  relocating to huntsville alabama
+     66  seeds=28 rank= 1  relocating to huntsville al
+     58  seeds=24 rank= 1  moving to huntsville
+     18  seeds= 4 rank= 1  companies moving to huntsville al
+     15  seeds= 3 rank= 2  moving to huntsville al reddit
+     14  seeds= 2 rank= 1  space command moving to huntsville
+     12  seeds= 1 rank= 1  huntsville al relocation guide
+     12  seeds= 1 rank= 1  what to know before moving to huntsville alabama
+     12  seeds= 1 rank= 1  moving to providence ri
+     12  seeds= 1 rank= 1  moving to ardmore pa
+     12  seeds= 1 rank= 1  moving to athens ga
+     12  seeds= 1 rank= 1  moving to athens greece
+     12  seeds= 1 rank= 1  moving to decatur ga
+     12  seeds= 1 rank= 1  trinity moving to canada
+     12  seeds= 1 rank= 1  moving to somerville
+
+=== homes-for-sale  (88 kws)
+     18  seeds= 4 rank= 1  huntsville al homes for sale
+     15  seeds= 3 rank= 2  huntsville al homes for sale zillow
+     14  seeds= 3 rank= 3  huntsville al homes for sale by owner
+     14  seeds= 2 rank= 1  huntsville al real estate
+     14  seeds= 3 rank= 3  huntsville al real estate agents
+     13  seeds= 3 rank= 4  huntsville al homes for sale with pool
+     13  seeds= 2 rank= 2  huntsville al real estate for sale
+     12  seeds= 2 rank= 3  huntsville al homes for sale 4 bedroom
+     12  seeds= 2 rank= 3  huntsville al real estate market
+     12  seeds= 1 rank= 1  madison al homes for sale
+     12  seeds= 1 rank= 1  athens al homes for sale
+     12  seeds= 2 rank= 3  owens cross roads homes for sale
+     11  seeds= 2 rank= 4  huntsville al real estate zillow
+     11  seeds= 1 rank= 2  madison al homes for sale zillow
+     11  seeds= 1 rank= 2  athens al homes for sale by owner
+     11  seeds= 1 rank= 2  athens al homes for sale zillow
+     11  seeds= 1 rank= 2  real estate companies in huntsville al
+     11  seeds= 2 rank= 4  owens cross roads houses for sale
+
+=== buying-process  (84 kws)
+     14  seeds= 3 rank= 3  huntsville al real estate agents
+     14  seeds= 2 rank= 1  huntsville al mortgage rates
+     14  seeds= 2 rank= 1  huntsville al mortgage lenders
+     14  seeds= 2 rank= 1  huntsville al realtors
+     13  seeds= 2 rank= 2  broker huntsville al mortgage rates
+     13  seeds= 2 rank= 2  first time home buyer programs in huntsville alabama
+     12  seeds= 1 rank= 1  huntsville al loans
+     12  seeds= 2 rank= 3  current mortgage rates huntsville al
+     12  seeds= 1 rank= 1  huntsville al first time home buyer
+     12  seeds= 1 rank= 1  home loans huntsville al first time buyers
+     12  seeds= 1 rank= 1  alabama first time home buyer programs
+     12  seeds= 1 rank= 1  huntsville al down payment assistance program
+     12  seeds= 1 rank= 1  city of huntsville down payment assistance
+     12  seeds= 1 rank= 1  best realtors in huntsville al
+     12  seeds= 1 rank= 1  best realtors in huntsville alabama
+     11  seeds= 1 rank= 2  huntsville alabama mortgage calculator
+     11  seeds= 1 rank= 2  first time home buyer huntsville al
+     11  seeds= 1 rank= 2  alabama first time homebuyer program
+
+=== rent-vs-buy  (79 kws)
+     14  seeds= 2 rank= 1  huntsville al apartments
+     14  seeds= 2 rank= 1  huntsville al rentals
+     14  seeds= 2 rank= 1  apartments in downtown huntsville
+     13  seeds= 2 rank= 2  huntsville al apartments for rent
+     13  seeds= 2 rank= 2  huntsville al rental homes
+     13  seeds= 2 rank= 2  apartments in downtown huntsville reviews
+     12  seeds= 3 rank= 5  moving truck rental huntsville al
+     12  seeds= 2 rank= 3  huntsville al rental cars
+     11  seeds= 1 rank= 2  homes for rent in huntsville area
+     11  seeds= 2 rank= 4  apartments in downtown huntsville cheap
+     11  seeds= 2 rank= 4  the village of hampton cove apartments
+     10  seeds= 1 rank= 3  huntsville al downtown apartments
+     10  seeds= 1 rank= 3  apartments huntsville al reddit
+     10  seeds= 1 rank= 3  huntsville al apartments downtown
+     10  seeds= 1 rank= 3  constellation apartments huntsville al
+     10  seeds= 2 rank= 5  huntsville al rental market
+     10  seeds= 2 rank= 5  hazel green apartments for rent
+     10  seeds= 1 rank= 3  apartments in downtown huntsville al
+
+=== admin-paperwork  (75 kws)
+     12  seeds= 1 rank= 1  alabama vehicle registration
+     12  seeds= 1 rank= 1  huntsville al tag office
+     12  seeds= 1 rank= 1  alabama drivers license transfer
+     12  seeds= 1 rank= 1  huntsville al business license
+     11  seeds= 1 rank= 2  alabama vehicle registration renewal
+     11  seeds= 1 rank= 2  huntsville al tag renewal
+     11  seeds= 1 rank= 2  madison county tag office huntsville al
+     11  seeds= 1 rank= 2  what do you need to transfer your driver's license to alabama
+     11  seeds= 1 rank= 2  alabama driver license out of state transfer
+     11  seeds= 1 rank= 2  huntsville al dmv
+     10  seeds= 1 rank= 3  alabama vehicle registration online
+     10  seeds= 1 rank= 3  alabama vehicle registration lookup
+     10  seeds= 1 rank= 3  huntsville al tag renewal locations
+     10  seeds= 1 rank= 3  car tags huntsville al
+     10  seeds= 1 rank= 3  how to get an alabama driver's license from out of state
+     10  seeds= 1 rank= 3  transfer driver license to alabama
+      9  seeds= 1 rank= 4  alabama vehicle registration out of state
+      9  seeds= 1 rank= 4  alabama vehicle registration fees
+
+=== taxes  (53 kws)
+     14  seeds= 2 rank= 1  huntsville al property tax
+     13  seeds= 2 rank= 2  huntsville al sales tax rate
+     12  seeds= 1 rank= 1  madison county property tax
+     12  seeds= 1 rank= 1  alabama property tax rate
+     12  seeds= 1 rank= 1  huntsville al taxes
+     11  seeds= 1 rank= 2  huntsville al property tax rate
+     11  seeds= 2 rank= 4  huntsville al tax assessor property search
+     11  seeds= 1 rank= 2  madison county property tax search
+     11  seeds= 1 rank= 2  madison county property tax il
+     11  seeds= 1 rank= 2  alabama property tax rates by county
+     11  seeds= 1 rank= 2  alabama property tax rates 2026
+     11  seeds= 1 rank= 2  huntsville al tax rate
+     10  seeds= 1 rank= 3  huntsville al property tax search
+     10  seeds= 1 rank= 3  huntsville al property tax assessor
+     10  seeds= 1 rank= 3  madison county property tax records
+     10  seeds= 1 rank= 3  alabama property tax rate 2025
+     10  seeds= 1 rank= 3  huntsville al sales tax
+     10  seeds= 1 rank= 3  huntsville al tax assessor
+
+=== insurance  (48 kws)
+     18  seeds= 4 rank= 1  huntsville al renters insurance
+     14  seeds= 2 rank= 1  huntsville al home insurance cost
+     14  seeds= 2 rank= 1  home insurance huntsville al
+     14  seeds= 2 rank= 1  huntsville al car insurance
+     14  seeds= 2 rank= 1  huntsville al insurance
+     13  seeds= 2 rank= 2  huntsville al home insurance
+     13  seeds= 2 rank= 2  car insurance huntsville al
+     12  seeds= 2 rank= 3  huntsville al homeowners insurance
+     11  seeds= 1 rank= 2  home insurance quotes huntsville al
+     11  seeds= 2 rank= 4  cheap car insurance huntsville al
+     11  seeds= 1 rank= 2  is car insurance cheap in alabama
+     11  seeds= 1 rank= 2  huntsville al insurance agencies
+     10  seeds= 1 rank= 3  home insurance broker huntsville al
+     10  seeds= 2 rank= 5  insurance companies huntsville al
+     10  seeds= 1 rank= 3  how much is car insurance in alabama
+     10  seeds= 1 rank= 3  top car insurance in huntsville al
+     10  seeds= 1 rank= 3  huntsville al insurance jobs
+      9  seeds= 1 rank= 4  home insurance rates in alabama
+
+=== housing-market  (41 kws)
+     14  seeds= 2 rank= 1  huntsville al average home price
+     14  seeds= 2 rank= 1  huntsville al housing market
+     12  seeds= 2 rank= 3  huntsville al real estate market
+     12  seeds= 1 rank= 1  huntsville al new construction homes
+     11  seeds= 1 rank= 2  huntsville al new construction
+     11  seeds= 1 rank= 2  new construction in huntsville al
+     11  seeds= 1 rank= 2  huntsville al median home price
+     11  seeds= 1 rank= 2  huntsville al housing market forecast
+     11  seeds= 1 rank= 2  huntsville al housing market trends
+     11  seeds= 1 rank= 2  is the twickenham property market moving
+     10  seeds= 1 rank= 3  new construction builders in huntsville al
+     10  seeds= 2 rank= 5  huntsville al rental market
+     10  seeds= 1 rank= 3  what is the average home price in huntsville alabama
+     10  seeds= 1 rank= 3  huntsville al housing market predictions
+     10  seeds= 1 rank= 3  housing market in huntsville
+      9  seeds= 1 rank= 4  madison al new construction homes for sale
+      9  seeds= 1 rank= 4  huntsville housing market forecast
+      8  seeds= 1 rank= 5  new builds huntsville al
+
+=== commute  (31 kws)
+     12  seeds= 1 rank= 1  huntsville al traffic
+     12  seeds= 1 rank= 1  alabama drivers license transfer
+     11  seeds= 1 rank= 2  huntsville al traffic news
+     11  seeds= 1 rank= 2  huntsville al traffic engineering
+     11  seeds= 1 rank= 2  what do you need to transfer your driver's license to alabama
+     11  seeds= 1 rank= 2  alabama driver license out of state transfer
+     10  seeds= 1 rank= 3  huntsville al traffic map
+     10  seeds= 1 rank= 3  how to get an alabama driver's license from out of state
+     10  seeds= 1 rank= 3  transfer driver license to alabama
+     10  seeds= 2 rank= 5  distance from madison to huntsville al
+      9  seeds= 1 rank= 4  huntsville al traffic cameras
+      9  seeds= 1 rank= 4  can you get your driver's license online in alabama
+      8  seeds= 1 rank= 5  huntsville al traffic report
+      8  seeds= 1 rank= 5  huntsville al traffic cameras live
+      7  seeds= 1 rank= 6  huntsville al traffic accidents today
+      7  seeds= 1 rank= 6  moved to alabama need drivers license
+      6  seeds= 1 rank= 7  huntsville al traffic map live
+      6  seeds= 1 rank= 7  huntsville al downtown parking
+
+=== cost-of-living  (24 kws)
+     50  seeds=21 rank= 3  cost of living in huntsville
+     18  seeds= 4 rank= 1  cost of living in huntsville al per month
+     14  seeds= 2 rank= 1  huntsville al cost of living
+     13  seeds= 2 rank= 2  average cost of living in huntsville al
+     13  seeds= 3 rank= 4  cost of living in huntsville alabama
+     12  seeds= 2 rank= 3  average cost of living in huntsville alabama
+     12  seeds= 1 rank= 1  living wage huntsville al
+     11  seeds= 1 rank= 2  huntsville al cost of living comparison
+     11  seeds= 1 rank= 2  cost of living index huntsville al
+     10  seeds= 1 rank= 3  huntsville al cost of living index
+     10  seeds= 1 rank= 3  what is the cost of living in huntsville al
+     10  seeds= 2 rank= 5  cost of living in huntsville al
+     10  seeds= 1 rank= 3  how much is car insurance in alabama
+     10  seeds= 1 rank= 3  cost of living in ardmore ok
+      9  seeds= 1 rank= 4  huntsville alabama cost of living calculator
+      8  seeds= 1 rank= 5  huntsville al average cost of living
+      8  seeds= 1 rank= 5  moving to providence ri cost of living
+      7  seeds= 1 rank= 6  how much would the tanner house cost
+
+=== comparisons  (3 kws)
+      6  seeds= 1 rank= 7  compare the cost of living in huntsville with other cities
+      5  seeds= 1 rank= 8  living in somerville vs cambridge
+      4  seeds= 1 rank= 9  five points vs little five points
+
+--- sample of dropped ---
+    moving to huntsville ontario
+    moving to huntsville tx
+    fbi moving to huntsville
+    nasa moving to huntsville
+    spacex moving to huntsville alabama
+    moving companies huntsville al
+    spacecom moving to huntsville
+    ussf moving to huntsville
+    fbi moving to huntsville alabama
+    movers huntsville al
+    moving companies alabama huntsville
+    moving company huntsville alabama
+    huntsville al moving companies
+    moving companies in huntsville al hiring
+    moving companies huntsville al local

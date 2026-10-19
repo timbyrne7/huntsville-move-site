@@ -1,0 +1,153 @@
+{
+ "verified_on": "2026-10-13",
+ "note": "Enrollment and staffing figures are included only where they could be read from the district's own site during this build. Anything marked null was not verified, and the district link is the authoritative source. Test scores: use the Alabama State Report Card, not rating sites.",
+ "districts": [
+  {
+   "name": "Huntsville City Schools",
+   "covers": "City of Huntsville, plus Hampton Cove, Big Cove and Green Mountain",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "Available in technical schools and magnet programs; see the district site for current lists"
+   ],
+   "site": "https://www.huntsvillecityschools.org/",
+   "zone_locator": "https://www.maps.huntsvilleal.gov/myschoolsmap/",
+   "notes": "The largest of the systems in Madison County and the one that serves most in-city neighbourhoods. Green Mountain is unincorporated county but sits in this district — see the quirks below."
+  },
+  {
+   "name": "Madison City Schools",
+   "covers": "City of Madison, the Town of Triana (by agreement), and part of Limestone County",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "8 elementary schools",
+    "3 middle schools",
+    "2 high schools"
+   ],
+   "site": "https://madisoncity.k12.al.us/",
+   "zone_locator": "https://www.madisoncity.k12.al.us/school-zones-2",
+   "notes": "Its zone page lists Madison city limits and Triana against this district, and Limestone County addresses separately — so a Limestone-side Madison address has to be checked, not assumed. Reported that 27% of its students live in the Limestone County areas of Madison."
+  },
+  {
+   "name": "Madison County Schools",
+   "covers": "Unincorporated Madison County — Harvest, Monrovia, Meridianville, New Market, Toney, Gurley, Brownsboro, Hazel Green, New Hope and the Ryland/Central area",
+   "enrollment": 20500,
+   "campuses": 30,
+   "verified_facts": [
+    "20,500 students",
+    "30 campuses",
+    "2,400 employees"
+   ],
+   "site": "https://www.mcssk12.org/",
+   "zone_locator": "https://www.mcssk12.org/our-schools/school-zones",
+   "notes": "Read from the district's own about page during this build. This is the district that applies to most new-build subdivisions outside the two cities — and the one movers most often assume wrongly."
+  },
+  {
+   "name": "Limestone County Schools",
+   "covers": "Unincorporated Limestone County — Capshaw, East Limestone, Tanner, Elkmont, Ardmore",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "Six high schools across the county system (per Tanner High School's own site)"
+   ],
+   "site": "https://www.lcsk12.org/",
+   "zone_locator": null,
+   "notes": "Applies to the fast-growing 72 corridor west of Madison as well as the rural north. Athens has its own separate city district inside this county."
+  },
+  {
+   "name": "Athens City Schools",
+   "covers": "City of Athens",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "A separate city district from Limestone County Schools"
+   ],
+   "site": "https://www.acs-k12.org/",
+   "zone_locator": null,
+   "notes": "One of the two public systems in Limestone County. Also runs its own municipal utilities, unlike unincorporated county addresses."
+  },
+  {
+   "name": "Decatur City Schools",
+   "covers": "City of Decatur",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "One of three public systems in Morgan County"
+   ],
+   "site": "https://www.dcs.edu/",
+   "zone_locator": null,
+   "notes": "Decatur is a separate job market and housing market from Huntsville — about 30 minutes west."
+  },
+  {
+   "name": "Hartselle City Schools",
+   "covers": "City of Hartselle",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "One of three public systems in Morgan County"
+   ],
+   "site": "https://www.hartselletigers.org/",
+   "zone_locator": null,
+   "notes": "Small city district south of Decatur with its own municipal utility."
+  },
+  {
+   "name": "Morgan County Schools",
+   "covers": "Unincorporated Morgan County — Priceville, Trinity, Somerville and the county areas around Decatur and Hartselle",
+   "enrollment": null,
+   "campuses": null,
+   "verified_facts": [
+    "Morgan County has three public systems: Decatur City, Hartselle City and Morgan County Schools"
+   ],
+   "site": "https://www.morgank12.org/",
+   "zone_locator": null,
+   "notes": "Priceville, Trinity and Somerville are county-district communities; Decatur and Hartselle are not."
+  }
+ ],
+ "questions_that_actually_decide_it": [
+  "Which district serves the exact parcel — checked on the official locator, not the listing agent's flyer.",
+  "Whether the address is inside a city limit at all: Madison County Schools applies to unincorporated addresses even when the mailing address says Huntsville or Madison.",
+  "Grade-band capacity: an elementary zoned to one school can feed a middle or high school in a different part of the county.",
+  "Magnet and specialised program enrollment windows, which run on their own calendar ahead of the school year.",
+  "Commute from that zone to your job — a district that is 5 minutes closer to Gate 9 can beat a higher-rated school 30 minutes away."
+ ],
+ "sources": [
+  {
+   "label": "Alabama State Department of Education — State Report Card (test scores, graduation rates, per-school detail)",
+   "url": "https://www.statereportcard.alsde.edu/"
+  },
+  {
+   "label": "Huntsville City Schools address-to-school locator",
+   "url": "https://www.maps.huntsvilleal.gov/myschoolsmap/"
+  },
+  {
+   "label": "Madison City Schools zones",
+   "url": "https://madisoncity.k12.al.us/domain/114"
+  },
+  {
+   "label": "Madison County Schools zones",
+   "url": "https://www.mcssk12.org/our-schools/school-zones"
+  }
+ ],
+ "quirks": [
+  {
+   "text": "Madison City Schools serves the City of Madison, the Town of Triana by agreement with its school board, and a portion of Limestone County — a reported 27% of its students live in the Limestone County areas of Madison.",
+   "source": "Madison City Schools zone page; al.com reporting",
+   "url": "https://www.madisoncity.k12.al.us/school-zones-2"
+  },
+  {
+   "text": "Green Mountain is unincorporated Madison County, but its children attend Huntsville City Schools — and Huntsville City Schools does not run a bus route over the mountain, per the Green Mountain Civic League.",
+   "source": "Green Mountain Civic League",
+   "url": "https://greenmountaincivicleague.org/no-huntsville-city-school-buses-on-green-mountain/"
+  },
+  {
+   "text": "Morgan County has three public school systems (Decatur City, Hartselle City and Morgan County Schools) and Limestone County has two (Athens City and Limestone County Schools). A county name never tells you the district.",
+   "source": "Morgan County Commission; Limestone County Schools",
+   "url": "https://morgancounty-al.gov/community/schools"
+  },
+  {
+   "text": "Hazel Green, New Hope and the Ryland/Central area are Madison County Schools communities — not Huntsville City — even where the mailing address says Huntsville.",
+   "source": "Madison County Schools school list",
+   "url": "https://www.mcssk12.org/"
+  }
+ ]
+}

@@ -1,0 +1,394 @@
+{
+  "county_for": {
+    "Huntsville": "Madison County",
+    "Madison": "Madison County",
+    "Harvest": "Madison County",
+    "Monrovia": "Madison County",
+    "Meridianville": "Madison County",
+    "New Market": "Madison County",
+    "Toney": "Madison County",
+    "Gurley": "Madison County",
+    "Brownsboro": "Madison County",
+    "Owens Cross Roads": "Madison County",
+    "Hampton Cove": "Madison County",
+    "Big Cove": "Madison County",
+    "Decatur": "Morgan County",
+    "Athens": "Limestone County",
+    "Hazel Green": "Madison County",
+    "Green Mountain": "Madison County",
+    "Ryland": "Madison County",
+    "New Hope": "Madison County",
+    "Triana": "Madison County",
+    "Capshaw": "Limestone County",
+    "Ardmore": "Limestone County",
+    "East Limestone": "Limestone County",
+    "Tanner": "Limestone County",
+    "Elkmont": "Limestone County",
+    "Hartselle": "Morgan County",
+    "Priceville": "Morgan County",
+    "Trinity": "Morgan County",
+    "Somerville": "Morgan County"
+  },
+  "class_for": {
+    "Huntsville": "huntsville_city",
+    "Madison": "madison_city",
+    "Harvest": "county",
+    "Monrovia": "county",
+    "Meridianville": "county",
+    "New Market": "county",
+    "Toney": "county",
+    "Gurley": "county",
+    "Brownsboro": "county",
+    "Owens Cross Roads": "county",
+    "Hampton Cove": "huntsville_city",
+    "Big Cove": "county",
+    "Athens": "limestone_city",
+    "Decatur": "morgan_city",
+    "Hazel Green": "county",
+    "Green Mountain": "huntsville_city",
+    "Ryland": "county",
+    "New Hope": "county",
+    "Triana": "madison_city",
+    "Capshaw": "limestone",
+    "Ardmore": "limestone",
+    "East Limestone": "limestone",
+    "Tanner": "limestone",
+    "Elkmont": "limestone",
+    "Hartselle": "morgan_city",
+    "Priceville": "morgan",
+    "Trinity": "morgan",
+    "Somerville": "morgan"
+  },
+  "class_label": {
+    "huntsville_city": "inside Huntsville city limits",
+    "madison_city": "inside Madison city limits",
+    "county": "unincorporated Madison County",
+    "limestone": "Limestone County",
+    "morgan": "Morgan County",
+    "limestone_city": "inside Athens city limits",
+    "morgan_city": "inside Decatur or Hartselle city limits"
+  },
+  "groups": [
+    {
+      "title": "Before the truck arrives",
+      "tasks": [
+        {
+          "text": "Forward your mail (USPS change of address) and update your address with your bank, insurer and payroll — do this 2 weeks out.",
+          "link": "https://moversguide.usps.com/",
+          "link_label": "USPS"
+        },
+        {
+          "text": "Electric, water, sewer and gas are all on one Huntsville Utilities account at this kind of address — book the start date for the day after you take possession.",
+          "link": "https://www.hsvutil.org/",
+          "link_label": "Huntsville Utilities",
+          "classes": [
+            "huntsville_city",
+            "madison_city"
+          ]
+        },
+        {
+          "text": "Inside Madison city limits you'll have two accounts: Huntsville Utilities for electricity, and the city utility for water and sewer.",
+          "link": "https://www.madisonal.gov/",
+          "link_label": "City of Madison",
+          "classes": [
+            "madison_city"
+          ]
+        },
+        {
+          "text": "Water and sewer out here are address-specific — some subdivisions sit on a water utility district, some on private wells and septic. Confirm with the seller who bills for water before you close.",
+          "classes": [
+            "county",
+            "limestone",
+            "morgan"
+          ]
+        },
+        {
+          "text": "Book your utility start date for the day after you take possession — the provider depends on where the address sits (see the utilities section below)."
+        },
+        {
+          "text": "Arrange internet at the new address before you move in — availability differs street by street, and county addresses vary more than city ones.",
+          "link": "https://broadbandmap.fcc.gov/",
+          "link_label": "FCC National Broadband Map"
+        },
+        {
+          "text": "Transfer or start homeowners/renters insurance effective the day you take possession. Alabama wind and hail coverage is worth a specific conversation with your agent."
+        },
+        {
+          "text": "Keep your closing disclosure or lease where you can reach it — you will need it for the tag office and for school enrollment."
+        },
+        {
+          "text": "Athens runs its own municipal utilities — one city account covers electric, water and sewer.",
+          "link": "https://www.athensalabama.us/",
+          "link_label": "City of Athens",
+          "classes": [
+            "limestone_city"
+          ]
+        },
+        {
+          "text": "Decatur and Hartselle each run their own municipal utility, so electric, water and sewer come from the city rather than the county.",
+          "link": "https://www.Decatur-AL.gov/",
+          "link_label": "City of Decatur",
+          "classes": [
+            "morgan_city"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Utilities and services",
+      "tasks": [
+        {
+          "text": "Garbage and recycling run on the city's collection day with city carts — check your day and the yard-waste and bulk rules.",
+          "link": "https://www.huntsvilleal.gov/",
+          "link_label": "City of Huntsville",
+          "classes": [
+            "huntsville_city"
+          ]
+        },
+        {
+          "text": "Garbage and recycling come from the City of Madison on its own collection day — set up service with the city.",
+          "link": "https://www.madisonal.gov/",
+          "link_label": "City of Madison",
+          "classes": [
+            "madison_city"
+          ]
+        },
+        {
+          "text": "Unincorporated addresses here usually contract a private hauler rather than getting county collection — confirm which hauler covers your subdivision and what day it runs.",
+          "link": "https://www.madisoncountyal.gov/",
+          "link_label": "Madison County",
+          "classes": [
+            "county"
+          ]
+        },
+        {
+          "text": "Confirm your hauling arrangement and any utility district for the exact address with the county.",
+          "link": "https://www.madisoncountyal.gov/",
+          "link_label": "Madison County",
+          "classes": [
+            "limestone",
+            "morgan"
+          ]
+        },
+        {
+          "text": "Electricity across most of Madison County comes from Huntsville Utilities; a few fringe addresses sit with a rural co-op. Confirm at your address before switching anything on."
+        },
+        {
+          "text": "If there is gas at the address, it's Huntsville Utilities territory — schedule the account and any appliance connection together."
+        },
+        {
+          "text": "Put the collection calendar on the fridge in week one — yard waste, bulk pickup and holiday schedules all differ."
+        },
+        {
+          "text": "Get your library card — the Huntsville–Madison County Public Library system covers the whole county and gives you digital access on day one.",
+          "link": "https://hmcpl.org/",
+          "link_label": "HMCPL"
+        },
+        {
+          "text": "Garbage and recycling come from the City of Athens on the city's collection day.",
+          "link": "https://www.athensalabama.us/",
+          "link_label": "City of Athens",
+          "classes": [
+            "limestone_city"
+          ]
+        },
+        {
+          "text": "Garbage and recycling are city-run here — check the city's collection day and cart rules.",
+          "link": "https://www.hartselle.org/",
+          "link_label": "City of Hartselle",
+          "classes": [
+            "morgan_city"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vehicles, licence and registration",
+      "tasks": [
+        {
+          "text": "Register vehicles and transfer titles at the Madison County licence office — bring the out-of-state title, proof of insurance and your new address. Alabama adds a one-time $15 title fee on top of annual registration, and out-of-state vehicles may need inspection.",
+          "link": "https://www.madisoncountyal.gov/departments/license-department/tags-title",
+          "link_label": "Madison County License Dept",
+          "classes": [
+            "huntsville_city",
+            "madison_city",
+            "county"
+          ]
+        },
+        {
+          "text": "Register vehicles and transfer titles at the licence office for your new county — bring the out-of-state title, proof of insurance and your address; out-of-state vehicles may need inspection.",
+          "link": "https://www.alea.gov/",
+          "link_label": "ALEA offices",
+          "classes": [
+            "limestone",
+            "limestone_city",
+            "morgan",
+            "morgan_city"
+          ]
+        },
+        {
+          "text": "Alabama registration is due in your birth month and renews every year. Confirm the registration and ad valorem total before you budget — it surprises out-of-state movers.",
+          "link": "https://www.revenue.alabama.gov/divisions/motor-vehicle/",
+          "link_label": "Alabama Revenue"
+        },
+        {
+          "text": "Exchange your out-of-state driver licence within 30 days of becoming a resident at an ALEA driver licence office — proof of residency and your prior licence are required.",
+          "link": "https://www.alea.gov/",
+          "link_label": "ALEA"
+        }
+      ]
+    },
+    {
+      "title": "Schools",
+      "tasks": [
+        {
+          "text": "Confirm which district — and which specific schools — serve your exact address before you sign anything. The three systems here are Huntsville City, Madison City and Madison County, and zones do not follow city-limit lines.",
+          "link": "https://www.maps.huntsvilleal.gov/myschoolsmap/",
+          "link_label": "Huntsville school locator"
+        },
+        {
+          "text": "Enroll with Huntsville City Schools: proof of address, Alabama Certificate of Immunization, birth certificate and prior school records are the usual set.",
+          "link": "https://www.huntsvillecityschools.org/",
+          "link_label": "Huntsville City Schools",
+          "classes": [
+            "huntsville_city"
+          ]
+        },
+        {
+          "text": "Enroll with Madison City Schools — its own enrollment process and its own boundary map, separate from both other systems.",
+          "link": "https://madisoncity.k12.al.us/",
+          "link_label": "Madison City Schools",
+          "classes": [
+            "madison_city"
+          ]
+        },
+        {
+          "text": "Enroll with Madison County Schools — this is the system for unincorporated addresses, including most new-build subdivisions outside the two cities.",
+          "link": "https://www.mcssk12.org/",
+          "link_label": "Madison County Schools",
+          "classes": [
+            "county"
+          ]
+        },
+        {
+          "text": "Enrollment for your district: check the district site for the current document list and the enrollment window.",
+          "classes": [
+            "limestone",
+            "limestone_city",
+            "morgan",
+            "morgan_city"
+          ]
+        },
+        {
+          "text": "Check each school's current performance page on the state report card rather than relying on ratings sites.",
+          "link": "https://www.statereportcard.alsde.edu/",
+          "link_label": "Alabama State Report Card"
+        },
+        {
+          "text": "Ask the district about capacity in your child's grade band — attendance lines shift when a school fills, and new subdivisions are where that happens first."
+        },
+        {
+          "text": "Enroll with Athens City Schools — a separate city district from Limestone County Schools. Check the address against the district's own zone map, because both systems exist in this county.",
+          "link": "https://www.acs-k12.org/",
+          "link_label": "Athens City Schools",
+          "classes": [
+            "limestone_city"
+          ]
+        },
+        {
+          "text": "Enroll with Decatur City Schools or Hartselle City Schools — Morgan County has three public systems (the two cities plus Morgan County Schools), so the address decides which one.",
+          "link": "https://dcc.org/education",
+          "link_label": "Morgan County districts",
+          "classes": [
+            "morgan_city"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Civic and community",
+      "tasks": [
+        {
+          "text": "Register to vote — Madison County residents register with the county board of registrars; Alabama requires photo ID at the polls.",
+          "link": "https://www.madisoncountyvotesal.gov/",
+          "link_label": "Madison County elections",
+          "classes": [
+            "huntsville_city",
+            "madison_city",
+            "county"
+          ]
+        },
+        {
+          "text": "Register to vote with the board of registrars for your new county — Alabama requires photo ID at the polls.",
+          "classes": [
+            "limestone",
+            "limestone_city",
+            "morgan",
+            "morgan_city"
+          ]
+        },
+        {
+          "text": "Update your vehicle registration and licence address first — both feed the voter-roll check."
+        },
+        {
+          "text": "Join the groups where newcomer questions actually get answered: the Newcomers Club of Greater Huntsville, and the subdivision Facebook group for your neighbourhood."
+        },
+        {
+          "text": "Find your neighbourhood association's covenant rules (HOA or voluntary association) before you paint, fence or park a trailer."
+        }
+      ]
+    },
+    {
+      "title": "Pets",
+      "only": [
+        "pets"
+      ],
+      "tasks": [
+        {
+          "text": "Alabama requires a current rabies vaccination; inside Huntsville city limits animal services licenses pets with the city.",
+          "link": "https://www.huntsvilleal.gov/environment/animal-services/",
+          "link_label": "Huntsville Animal Services",
+          "classes": [
+            "huntsville_city"
+          ]
+        },
+        {
+          "text": "Alabama requires a current rabies vaccination — keep the certificate with your records and check whether your city or county wants the animal licensed separately.",
+          "classes": [
+            "county",
+            "limestone",
+            "limestone_city",
+            "madison_city",
+            "morgan",
+            "morgan_city"
+          ]
+        },
+        {
+          "text": "Send your vet records ahead of you — clinics here will ask for rabies dates before they will see a new patient."
+        }
+      ]
+    },
+    {
+      "title": "Military / PCS",
+      "only": [
+        "mil"
+      ],
+      "tasks": [
+        {
+          "text": "Get your orders into the school system and the housing office early — Redstone assignments fill around the school year, not the PCS date."
+        },
+        {
+          "text": "Confirm your BAH rate from the official DoD table for your grade, dependents and the Huntsville MHA before you set a housing budget — do not work from an old posting.",
+          "link": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/",
+          "link_label": "DoD BAH"
+        },
+        {
+          "text": "Base access: non-DoD ID holders need a visitor pass and a sponsor; plan the first trip through the main gate with the paperwork in hand. Gate 9 on Rideout Road is the main visitor gate."
+        },
+        {
+          "text": "Off-post or on-post decision turns on school zone and commute more than on rent in most Redstone moves — run both through the calculators on this site."
+        }
+      ]
+    }
+  ]
+}

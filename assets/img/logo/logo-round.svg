@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"
+     role="img" aria-label="Move to Huntsville, Alabama">
+  <title>Move to Huntsville</title>
+  <defs>
+    <linearGradient id="discFill" x1="0.1" y1="0" x2="0.62" y2="1">
+      <stop offset="0" stop-color="#0d63b8"/>
+      <stop offset="58%" stop-color="#072f57"/>
+      <stop offset="100%" stop-color="#072f57" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="36%" cy="24%" r="74%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="62%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="62%" stop-color="#e8f0fa"/>
+      <stop offset="100%" stop-color="#b9cde3"/>
+    </linearGradient>
+    <linearGradient id="flameFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd27a"/>
+      <stop offset="45%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#c2410c" stop-opacity="0.2"/>
+    </linearGradient>
+    <path id="arcTop" d="M256 256 m -212,0 a 212,212 0 1,1 424,0"/>
+    <path id="arcBottom" d="M256 256 m -236,0 a 236,236 0 1,0 472,0"/>
+  </defs>
+
+  <circle cx="256" cy="256" r="256" fill="url(#discFill)"/>
+  <circle cx="256" cy="256" r="256" fill="url(#sheen)"/>
+  <circle cx="256" cy="256" r="250" fill="none" stroke="#ffffff"
+          stroke-width="3" opacity="0.5"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffb27a" stroke-width="2" opacity="0.45"/>
+  <g font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-weight="700"
+     fill="#ffffff" text-anchor="middle">
+    <text font-size="32" letter-spacing="7">
+      <textPath href="#arcTop" startOffset="50%">MOVE TO</textPath>
+    </text>
+    <text font-size="30" letter-spacing="4.4">
+      <textPath href="#arcBottom" startOffset="50%">HUNTSVILLE</textPath>
+    </text>
+  </g>
+  <g transform="translate(0 -6)"><g transform="translate(256 258) scale(1.18) translate(-256 -258)">
+    <ellipse cx="256" cy="256" rx="150" ry="112" transform="rotate(-16 256 256)" fill="none"
+             stroke="#ffd9a8" stroke-width="2.5" opacity="0.26"/>
+    <path d="M151 404 Q256 380 361 404" fill="none" stroke="#ffffff" stroke-width="3"
+          stroke-linecap="round" opacity="0.55"/>
+
+    <g fill="#ffd9a8">
+      <path d="M150 176 l3.4 8.6 8.6 3.4 -8.6 3.4 -3.4 8.6 -3.4 -8.6 -8.6 -3.4 8.6 -3.4 z"/>
+      <path d="M357 166 l2.7 6.8 6.8 2.7 -6.8 2.7 -2.7 6.8 -2.7 -6.8 -6.8 -2.7 6.8 -2.7 z"/>
+      <circle cx="133" cy="300" r="2.6"/><circle cx="381" cy="264" r="2.2"/><circle cx="197" cy="142" r="1.9"/>
+    </g>
+
+    <path d="M256 146 C273 173 281 197 281 216 L281 293 C281 307 277 316 271 322
+             L241 322 C235 316 231 307 231 293 L231 216 C231 197 239 173 256 146 Z"
+          fill="url(#bodyFill)"/>
+    <path d="M256 148 C265 160 271 170 274 181 L238 181 C241 170 247 160 256 148 Z" fill="#f97316"/>
+    <circle cx="256" cy="236" r="13.5" fill="#0b3a6b" stroke="#ffffff" stroke-width="4.5"/>
+    <circle cx="251" cy="232" r="4.5" fill="#ffffff" opacity="0.5"/>
+    <path d="M231 274 L207 318 C204 324 206 329 211 328 L231 317 Z" fill="#f97316"/>
+    <path d="M281 274 L305 318 C308 324 306 329 301 328 L281 317 Z" fill="#f97316"/>
+    <path d="M241 322 C241 348 249 366 256 386 C263 366 271 348 271 322 Z" fill="url(#flameFill)"/>
+    <path d="M249 322 C249 342 253 354 256 368 C259 354 263 342 263 322 Z" fill="#fff3c4"/>
+
+  </g></g>
+</svg>

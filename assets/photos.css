@@ -1,0 +1,34 @@
+/* Photo components — galleries, bands and the hero image.
+   Every image is freely licensed from Wikimedia Commons and credited under the photo. */
+.hero.has-photo{
+  background-image:linear-gradient(160deg,rgba(9,49,94,.94) 0%,rgba(10,80,150,.78) 55%,rgba(9,90,70,.9) 130%),
+                   url('../img/downtown-panorama.jpg');
+  background-size:cover;background-position:center 65%;background-repeat:no-repeat}
+.hero.has-photo h1,.hero.has-photo p.lead{text-shadow:0 1px 12px rgba(0,0,0,.35)}
+
+.gallery{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:22px 0}
+figure.photo{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+figure.photo img{display:block;width:100%;height:210px;object-fit:cover}
+figure.photo.wide{grid-column:span 2}
+figure.photo.tall img{height:320px}
+figure.photo figcaption{padding:11px 13px;font-size:13.5px;color:var(--ink-2)}
+figure.photo figcaption b{color:var(--ink)}
+figure.photo .credit{display:block;color:var(--muted);font-size:11.5px;margin-top:4px}
+figure.photo .credit a{color:var(--muted);text-decoration:underline}
+
+.photo-band{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin:20px 0}
+.photo-band figure{margin:0;position:relative;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.photo-band img{display:block;width:100%;height:150px;object-fit:cover}
+.photo-band figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(9,20,32,.82));
+  color:#fff;font-size:12.5px;padding:18px 10px 8px}
+.photo-band .credit{display:none}
+
+.photo-tile{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border-radius:14px;overflow:hidden;margin:22px 0;box-shadow:var(--shadow)}
+.photo-tile figure{margin:0;position:relative}
+.photo-tile img{display:block;width:100%;height:240px;object-fit:cover}
+.photo-tile figcaption{position:absolute;inset:auto 0 0 0;padding:26px 14px 12px;color:#fff;
+  background:linear-gradient(transparent,rgba(9,20,32,.85));font-size:13.5px}
+.photo-tile .credit{display:none}
+
+.credits-table img{width:120px;height:80px;object-fit:cover;border-radius:8px;display:block}
+@media(max-width:760px){figure.photo.wide{grid-column:span 1}}

@@ -1,0 +1,33 @@
+{
+ "checked_utc": "2026-10-19T19:28:39+00:00",
+ "domain": "movingtohuntsville.org",
+ "sources": {
+  "hypestat": {
+   "url": "https://hypestat.com/info/movingtohuntsville.org",
+   "result": "not found in the HypeStat database yet (no SimilarWeb/SEMrush figures available)"
+  },
+  "similarweb": {
+   "url": "https://www.similarweb.com/website/movingtohuntsville.org/",
+   "result": "HTTP 403 from CloudFront to both plain fetch and a real browser - no figure obtainable"
+  },
+  "statshow": {
+   "url": "https://www.statshow.com/www/movingtohuntsville.org",
+   "result": "floor placeholder only: Daily Visitors 1, Monthly Visitors 30, Yearly 365, site worth $10 - template default, not a measurement"
+  },
+  "wayback_cdx": {
+   "url": "https://web.archive.org/cdx/search/cdx?url=movingtohuntsville.org",
+   "result": "no captures at all"
+  },
+  "rdap": {
+   "result": "registered 2026-01-28 (Namecheap), last changed 2026-08-12, status clientTransferProhibited, NS dns-parking.com"
+  }
+ },
+ "conclusion": "No reliable monthly-traffic figure is obtainable from free sources. Domain is ~9 months old, absent from free traffic databases and uncaptured by the Wayback Machine. Do not quote an estimated number.",
+ "content_scale": {
+  "posts": 33,
+  "total_words": 43697,
+  "min_words": 491,
+  "max_words": 2335,
+  "monetisation": "mover-quote lead form (leads sold to moving companies)"
+ }
+}

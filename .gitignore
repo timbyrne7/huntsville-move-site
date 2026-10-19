@@ -1,0 +1,26 @@
+# Never commit captured lead data
+leads.csv
+leads.jsonl
+leads.*.csv
+leads.*.jsonl
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Runtime noise
+__pycache__/
+*.pyc
+*.log
+nohup.out
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local scratch
+cache/
+scratch/

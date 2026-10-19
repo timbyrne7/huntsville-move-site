@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Move to Huntsville — round badge</title>
+<link rel="icon" href="assets/img/logo/favicon.ico">
+<style>
+  :root{--ink:#0f1720;--muted:#64748b;--line:#e2e8f0;--brand:#0b5cad;--accent:#c2410c}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 "Liberation Sans",Arial,Helvetica,sans-serif;color:var(--ink);background:#f7f9fc}
+  .wrap{max-width:1120px;margin:0 auto;padding:36px 24px 72px}
+  header{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:8px}
+  h1{font-size:22px;margin:0 0 6px;letter-spacing:-.01em}
+  p.sub{margin:0;color:var(--muted);max-width:64ch}
+  h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:34px 0 14px;font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:16px}
+  .cell{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center}
+  .cell.dark{background:#0b1b2e;border-color:#1e3a5c}
+  .cell img{display:block;margin:0 auto 14px}
+  .cap{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .cell.dark .cap{color:#93b0cb}
+  .row{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px}
+  .row+.row{margin-top:12px}
+  .row.dark{background:#0b1b2e;border-color:#1e3a5c;color:#fff}
+  .wordmark{font-weight:700;font-size:27px;letter-spacing:-.015em;line-height:1}
+  .wordmark span{display:block;font-weight:400;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:7px}
+  .row.dark .wordmark span{color:#93b0cb}
+  .sizes{display:flex;align-items:flex-end;gap:26px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+  .sizes.dark{background:#0b1b2e;border-color:#1e3a5c;color:#fff}
+  .sizes figure{margin:0;text-align:center;font-size:11px;color:var(--muted)}
+  .sizes.dark figure{color:#93b0cb}
+  .sizes img{display:block;margin:0 auto 8px}
+  .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .sw{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+  .sw i{display:block;height:56px}
+  .sw div{padding:9px 12px;font-size:12px;color:var(--muted)}
+  .sw b{display:block;color:var(--ink);font-size:12.5px}
+</style></head>
+<body><div class="wrap">
+  <header>
+    <h1>Move to Huntsville — round badge</h1>
+    <p class="sub">Five files, one geometry. Brand blue for the site, white ground for print, a one-colour version for photography, and two simplified marks for avatars and favicons.</p>
+  </header>
+
+  <h2>Horizontal lockup — scene + wordmark</h2>
+  <div class="row" style="display:block;padding:18px 22px">
+    <img src="assets/img/logo/logo-horizontal.svg" width="920" alt="Horizontal lockup with Huntsville skyline">
+  </div>
+  <div class="row dark" style="display:block;padding:18px 22px">
+    <img src="assets/img/logo/logo-horizontal-reverse.svg" width="920" alt="Horizontal lockup, reversed for dark backgrounds">
+  </div>
+  <div class="sizes" style="margin-top:12px">
+    <figure><img src="assets/img/logo/logo-horizontal.svg" width="300" alt=""><figcaption>300px</figcaption></figure>
+    <figure><img src="assets/img/logo/logo-horizontal.svg" width="220" alt=""><figcaption>220px</figcaption></figure>
+    <figure><img src="assets/img/logo/logo-horizontal.svg" width="160" alt=""><figcaption>160px</figcaption></figure>
+    <figure><img src="assets/img/logo/logo-horizontal.svg" width="110" alt=""><figcaption>110px</figcaption></figure>
+    <figure><img src="assets/img/logo/logo-horizontal-mono.svg" width="300" alt=""><figcaption>mono</figcaption></figure>
+  </div>
+
+  <h2>The badge</h2>
+  <div class="grid">
+    <div class="cell"><img src="assets/img/logo/logo-round.svg" width="196" height="196" alt="Primary badge"><div class="cap">Primary</div></div>
+    <div class="cell"><img src="assets/img/logo/logo-round-light.svg" width="196" height="196" alt="Light badge"><div class="cap">Light ground</div></div>
+    <div class="cell dark"><img src="assets/img/logo/logo-round-mono-white.svg" width="196" height="196" alt="Mono badge"><div class="cap">Mono / photography</div></div>
+    <div class="cell"><img src="assets/img/logo/logo-round-compact.svg" width="196" height="196" alt="Compact mark"><div class="cap">Compact — no text</div></div>
+  </div>
+
+  <h2>Lockup</h2>
+  <div class="row">
+    <img src="assets/img/logo/logo-round-compact.svg" width="64" height="64" alt="">
+    <div class="wordmark">Move to Huntsville<span>Rocket City · Alabama</span></div>
+  </div>
+  <div class="row dark">
+    <img src="assets/img/logo/logo-round-mono-white.svg" width="64" height="64" alt="">
+    <div class="wordmark">Move to Huntsville<span>Rocket City · Alabama</span></div>
+  </div>
+
+  <h2>Favicon and small sizes</h2>
+  <div class="sizes">
+    <figure><img src="assets/img/logo/png/logo-round-mark-64.png" width="64" height="64" alt=""><figcaption>64 mark</figcaption></figure>
+    <figure><img src="assets/img/logo/png/logo-round-mark-48.png" width="48" height="48" alt=""><figcaption>48</figcaption></figure>
+    <figure><img src="assets/img/logo/png/logo-round-mark-32.png" width="32" height="32" alt=""><figcaption>32</figcaption></figure>
+    <figure><img src="assets/img/logo/png/logo-round-mark-16.png" width="16" height="16" alt=""><figcaption>16</figcaption></figure>
+    <figure><img src="assets/img/logo/png/logo-round-compact-64.png" width="64" height="64" alt=""><figcaption>compact 64</figcaption></figure>
+    <figure><img src="assets/img/logo/png/logo-round-128.png" width="128" height="128" alt=""><figcaption>full 128</figcaption></figure>
+  </div>
+  <div class="sizes dark" style="margin-top:12px">
+    <figure><img src="assets/img/logo/png/logo-round-mark-48.png" width="48" height="48" alt=""><figcaption>48 on dark</figcaption></figure>
+    <figure><img src="assets/img/logo/png/logo-round-mark-32.png" width="32" height="32" alt=""><figcaption>32 on dark</figcaption></figure>
+    <figure><img src="assets/img/logo/logo-round-mono-white.svg" width="72" height="72" alt=""><figcaption>mono on dark</figcaption></figure>
+  </div>
+
+  <h2>Palette</h2>
+  <div class="swatches">
+    <div class="sw"><i style="background:linear-gradient(135deg,#0d63b8,#072f57)"></i><div><b>Disc</b>#0d63b8 → #072f57</div></div>
+    <div class="sw"><i style="background:#f97316"></i><div><b>Accent</b>#f97316</div></div>
+    <div class="sw"><i style="background:#ffffff;border-bottom:1px solid #e2e8f0"></i><div><b>Type / body</b>#ffffff</div></div>
+    <div class="sw"><i style="background:#ffd9a8"></i><div><b>Orbit / stars</b>#ffd9a8</div></div>
+    <div class="sw"><i style="background:#fff3c4"></i><div><b>Flame core</b>#fff3c4</div></div>
+  </div>
+</div></body></html>
