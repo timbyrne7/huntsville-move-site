@@ -39,11 +39,17 @@
     }).join('');
   }
 
+  // The prototype notice is for local previews only — on the published domain it
+  // told visitors (and crawlers) the site was "not published", which is wrong.
+  const LOCAL = ['localhost', '127.0.0.1', '::1', ''].includes(location.hostname)
+    || location.protocol === 'file:'
+    || new URLSearchParams(location.search).has('preview');
+
   const header = `
-  <div class="banner"><div class="wrap">
+  ${LOCAL ? `<div class="banner"><div class="wrap">
     <div><b>Prototype preview</b> — running on your local server. Payments, rates and legal text are placeholders pending compliance review.</div>
     <div class="small">Local preview build · not published</div>
-  </div></div>
+  </div></div>` : ''}
   <header class="site"><div class="wrap">
     <a class="logo" href="index.html" aria-label="Move to Huntsville — home"><img src="assets/img/logo/logo-horizontal.svg" alt="Move to Huntsville" width="243" height="48"></a>
     <nav class="main">${navHTML()}</nav>

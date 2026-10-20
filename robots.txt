@@ -1,0 +1,9 @@
+# Move to Huntsville — https://www.movetohuntsville.net
+User-agent: *
+Allow: /
+Disallow: /_leads
+Disallow: /leads.
+Disallow: /api/
+Disallow: /logo-preview.html
+
+Sitemap: https://www.movetohuntsville.net/sitemap.xml
