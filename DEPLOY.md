@@ -122,6 +122,46 @@ container-local storage.
 
 ---
 
+## Search-engine surface (live, 2026-10-20)
+
+Generated, never hand-edited — run the tools after adding or renaming a page:
+
+```
+python3 tools/gen_seo.py          # writes the head block, robots.txt, sitemap.xml
+python3 tools/gen_seo.py --check  # non-zero exit if a page has drifted out of date
+python3 tools/make_og.py          # rebuilds assets/og.png (needs Pillow)
+```
+
+- Every page carries its own `<link rel="canonical">`, Open Graph + Twitter card tags
+  pointing at `assets/og.png` (1200×630), and JSON-LD: `Organization` + `WebSite` +
+  `WebPage` on the index, `WebPage` + `BreadcrumbList` elsewhere.
+- `robots.txt` allows everything except `/_leads`, `/leads.*`, `/api/*` and
+  `/logo-preview.html`; it points at `sitemap.xml`.
+- `sitemap.xml` is built from the pages on disk with `lastmod` from the last git commit
+  touching each file, so it cannot drift from the site.
+- `logo-preview.html` is `noindex, follow` and deliberately absent from the sitemap.
+- The prototype banner in `assets/chrome.js` now renders only on localhost (or `?preview`):
+  on the published domain it was telling visitors and crawlers the site was "not published".
+
+### Still human-gated
+
+Nothing below can be done by an agent without Tim's Google account:
+
+1. **Google Search Console** → add a **Domain** property for `movetohuntsville.net`
+   (covers apex + www). Verify by DNS TXT at GoDaddy — Search Console shows the exact
+   `google-site-verification=…` value; add it as a TXT record on `@`.
+2. **Submit the sitemap**: `https://www.movetohuntsville.net/sitemap.xml`.
+3. **URL Inspection → Request Indexing** on the homepage and the five tool pages.
+4. **Links.** A new domain with no inbound links is the actual bottleneck, not the markup.
+   Directory listings, community/niche mentions and outreach all need a human account or
+   voice. There is no API that forces Google to index a URL; the old sitemap *ping*
+   endpoint was retired in 2023.
+
+For Bing/Yandex, IndexNow is account-free: serve a key file at the site root and POST the
+URLs — worth adding if Bing traffic matters.
+
+---
+
 ## Option B — Cloudflare Tunnel (live in ~10 minutes, but hosted on this box)
 
 No deploy, no code changes: the site you are looking at is served from this container and
