@@ -9,6 +9,18 @@ visible end to end:
     GET  /_leads           human-readable view of captured submissions
     GET  /health           {"ok": true, ...}
 
+Lead submissions are also emailed, so no CRM is required. Configure with:
+    LEAD_TO            destination address (required to switch emailing on)
+    SMTP_HOST          e.g. smtp.gmail.com / smtp-relay.brevo.com
+    SMTP_PORT          default 587 (STARTTLS); 465 is used automatically with SMTP_SSL=1
+    SMTP_USER          SMTP username
+    SMTP_PASS          SMTP password or app password
+    LEAD_FROM          From: address (defaults to SMTP_USER)
+    LEAD_EMAIL_FORMS   optional comma-separated data-lead form names to email
+                       (default: every form)
+Emailing is skipped silently when LEAD_TO/SMTP_HOST are unset, and a failed send
+never fails the request - the lead is always written to leads.jsonl first.
+
 Run:  python3 server.py [--port 8080] [--host 0.0.0.0]
 """
 
@@ -17,8 +29,13 @@ import csv
 import html
 import json
 import os
+import smtplib
+import ssl
 import sys
+import threading
 from datetime import datetime, timezone
+from email.message import EmailMessage
+from email.utils import formatdate, make_msgid
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
 
@@ -31,6 +48,121 @@ if LEADS_DIR != ROOT:
 LEADS = os.path.join(LEADS_DIR, "leads.jsonl")
 LEADS_CSV = os.path.join(LEADS_DIR, "leads.csv")
 ALERTS = os.path.join(LEADS_DIR, "alerts.jsonl")
+
+# ---------------------------------------------------------------------------
+# Lead email delivery - no CRM required
+# ---------------------------------------------------------------------------
+EMAIL_LABELS = {
+    "ts": "Submitted", "form": "Form", "name": "Name", "email": "Email", "phone": "Phone",
+    "address": "Address", "zip": "ZIP", "timeline": "Timeline", "price_range": "Price range",
+    "loan_type": "Loan type", "credit_band": "Credit band", "employer": "Employer",
+    "military": "Military", "work_location": "Work location", "area": "Area",
+    "max_price": "Max price", "min_beds": "Min beds", "district": "District",
+    "budget": "Budget", "from_city": "Moving from", "consent": "Consent",
+    "page": "Page", "ip": "IP",
+}
+EMAIL_ORDER = ["ts", "form", "name", "email", "phone", "timeline", "price_range", "loan_type",
+               "credit_band", "military", "employer", "work_location", "area", "address", "zip",
+               "budget", "max_price", "min_beds", "district", "from_city", "consent", "page", "ip"]
+
+
+def _clean(value, limit=500):
+    """Strip CR/LF so a submitted value can never inject mail headers."""
+    s = "" if value is None else str(value)
+    return s.replace("\r", " ").replace("\n", " ").strip()[:limit]
+
+
+def lead_email_config():
+    """SMTP settings, or None when emailing has not been configured yet."""
+    to = _clean(os.environ.get("LEAD_TO"))
+    host = _clean(os.environ.get("SMTP_HOST"))
+    if not to or not host:
+        return None
+    try:
+        port = int(os.environ.get("SMTP_PORT") or 587)
+    except ValueError:
+        port = 587
+    return {
+        "to": to, "host": host, "port": port,
+        "user": _clean(os.environ.get("SMTP_USER")),
+        "password": os.environ.get("SMTP_PASS") or "",
+        "sender": _clean(os.environ.get("LEAD_FROM")) or _clean(os.environ.get("SMTP_USER")) or to,
+        "ssl": (os.environ.get("SMTP_SSL") or "").strip().lower() in ("1", "true", "yes"),
+        "forms": [f.strip() for f in (os.environ.get("LEAD_EMAIL_FORMS") or "").split(",") if f.strip()],
+    }
+
+
+def render_lead_email(payload):
+    form = _clean(payload.get("form")) or "lead"
+    who = _clean(payload.get("name")) or _clean(payload.get("email")) or "someone"
+    subject = f"New {form} lead - {who}"
+    keys = [k for k in EMAIL_ORDER if k in payload] + [k for k in payload if k not in EMAIL_ORDER]
+    lines, rows = [], []
+    for k in keys:
+        v = _clean(payload.get(k), 2000)
+        if not v:
+            continue
+        label = EMAIL_LABELS.get(k, str(k).replace("_", " ").title())
+        lines.append(f"{label}: {v}")
+        rows.append(
+            "<tr>"
+            f"<td style='padding:4px 14px 4px 0;color:#64748b;vertical-align:top'>{html.escape(label)}</td>"
+            f"<td style='padding:4px 0;color:#0f1720'><strong>{html.escape(v)}</strong></td>"
+            "</tr>")
+    text_body = "\n".join(lines)
+    html_body = (
+        "<div style='font:15px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;color:#0f1720'>"
+        f"<h2 style='margin:0 0 4px'>{html.escape(subject)}</h2>"
+        "<p style='margin:0 0 14px;color:#64748b'>Submitted through the website.</p>"
+        f"<table style='border-collapse:collapse'>{''.join(rows)}</table>"
+        "</div>")
+    return subject, text_body, html_body
+
+
+def _smtp_send(cfg, subject, text_body, html_body, reply_to=None):
+    msg = EmailMessage()
+    msg["Subject"] = subject
+    msg["From"] = cfg["sender"]
+    msg["To"] = cfg["to"]
+    msg["Date"] = formatdate(localtime=True)
+    msg["Message-ID"] = make_msgid()
+    if reply_to:
+        msg["Reply-To"] = reply_to          # reply straight to the lead
+    msg.set_content(text_body)
+    msg.add_alternative(html_body, subtype="html")
+    ctx = ssl.create_default_context()
+    if cfg["ssl"]:
+        with smtplib.SMTP_SSL(cfg["host"], cfg["port"], timeout=15, context=ctx) as s:
+            if cfg["user"]:
+                s.login(cfg["user"], cfg["password"])
+            s.send_message(msg)
+    else:
+        with smtplib.SMTP(cfg["host"], cfg["port"], timeout=15) as s:
+            s.ehlo()
+            s.starttls(context=ctx)
+            s.ehlo()
+            if cfg["user"]:
+                s.login(cfg["user"], cfg["password"])
+            s.send_message(msg)
+
+
+def email_lead(payload):
+    """Send one notification. Never raises - leads.jsonl is the durable record."""
+    cfg = lead_email_config()
+    if not cfg:
+        return
+    form = _clean(payload.get("form"))
+    if cfg["forms"] and form not in cfg["forms"]:
+        return
+    try:
+        subject, text_body, html_body = render_lead_email(payload)
+        reply_to = _clean(payload.get("email"))
+        if "@" not in reply_to:
+            reply_to = None
+        _smtp_send(cfg, subject, text_body, html_body, reply_to)
+        print(f"[lead-email] sent {form or 'lead'} -> {cfg['to']}", flush=True)
+    except Exception as e:  # noqa: BLE001 - mail trouble must never break the form
+        print(f"[lead-email] FAILED {form or 'lead'}: {type(e).__name__}: {e}", flush=True)
 
 MIME = {
     ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8",
@@ -133,6 +265,9 @@ class Handler(SimpleHTTPRequestHandler):
             append_jsonl(LEADS, payload)
             append_csv(payload)
             print(f"[lead] {payload.get('form')} :: {payload.get('email')} :: {payload.get('page')}", flush=True)
+            # Emailed in the background: the lead is already safely on disk, and the
+            # visitor gets their response without waiting on an SMTP round trip.
+            threading.Thread(target=email_lead, args=(payload,), daemon=True).start()
             return self._json({"ok": True, "id": payload["ts"]})
         append_jsonl(ALERTS, payload)
         print(f"[alert] {payload.get('email')} :: {payload.get('area')}", flush=True)
