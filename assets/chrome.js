@@ -53,7 +53,7 @@
   <header class="site"><div class="wrap">
     <a class="logo" href="index.html" aria-label="Move to Huntsville — home"><img src="assets/img/logo/logo-horizontal.svg" alt="Move to Huntsville" width="243" height="48"></a>
     <nav class="main">${navHTML()}</nav>
-    <a class="cta-top" href="prequal.html">Need a Mortgage Quote</a>
+    <a class="cta-top" href="https://share.google/cyhfGiiBARQB41KOW" target="_blank" rel="noopener">Need a Mortgage Quote</a>
   </div></header>`;
 
   const footer = `
@@ -73,7 +73,7 @@
       </div>
       <div>
         <h4>About this site</h4>
-        <p class="small"><a href="about.html">How this site works</a><br><a href="photos.html">Photo credits</a><br><a href="prequal.html">Get pre-qualified</a></p>
+        <p class="small"><a href="about.html">How this site works</a><br><a href="photos.html">Photo credits</a><br><a href="https://share.google/cyhfGiiBARQB41KOW" target="_blank" rel="noopener">Get pre-qualified</a></p>
       </div>
     </div>
     <div class="nmls">

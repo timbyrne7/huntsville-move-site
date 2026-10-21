@@ -40,7 +40,8 @@ PRIORITY = {
     "schools.html": ("0.9", "monthly"),
     "commute.html": ("0.9", "monthly"),
     "cost-of-living.html": ("0.9", "monthly"),
-    "prequal.html": ("0.8", "monthly"),
+    # prequal.html retired 2026-10-21 — it now redirects to the Google Business
+    # Profile, so it stays out of the sitemap. Do not re-add.
     "rent-vs-buy.html": ("0.8", "monthly"),
     "rent-in-huntsville.html": ("0.8", "monthly"),
     "property-taxes.html": ("0.8", "monthly"),
