@@ -80,9 +80,9 @@
       <span class="eho">⌂ Equal Housing Opportunity</span>
       <span>NMLS #000000 (placeholder)</span>
       <span>Licensed in Alabama (placeholder)</span>
-      <span>Prototype build — data: US Census Bureau ACS 2024 1-year, OSRM, official district and utility sources</span>
+      <span>Data: US Census Bureau ACS 2024 1-year, OSRM, official district and utility sources</span>
     </div>
-    <p class="small" style="margin-top:14px">This site does not sell or share your information. It is not a loan application, offer or commitment to lend; all payment figures are estimates and require review before any public launch.</p>
+    <p class="small" style="margin-top:14px">This site does not sell or share your information. It is not a loan application, offer or commitment to lend; all payment figures are estimates.</p>
   </div></footer>`;
 
   document.addEventListener('DOMContentLoaded', () => {

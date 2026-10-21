@@ -251,7 +251,7 @@
         <tr><td>Estimated house payment for a ${bedrooms}-bedroom-sized home (20% down, ${topRate}% illustrative rate)</td><td class="num">${money(a.piti)}</td><td class="num">${money(h.piti)}</td><td class="num">${(h.piti - a.piti) <= 0 ? '−' : '+'}${money(Math.abs(h.piti - a.piti))}/mo</td></tr>
         </tbody></table>
         <p class="small muted">Huntsville carry of ${money(h.piti)}/mo is modelled on a ${money(h.target)} home with Alabama property tax at the metro's actual median of ${money(home.median_taxes)}/yr — the single biggest line-item difference for most movers. Alabama levies a state income tax; Tennessee, Texas, Florida, Washington and Nevada do not — check your own state before comparing take-home pay.</p>
-        <div class="disclaimer">Source: US Census Bureau ACS 2024 1-year estimates via the Census Reporter API, retrieved for this prototype. Rent, value and income are metro medians, not the house you will buy.</div>`;
+        <div class="disclaimer">Source: US Census Bureau ACS 2024 1-year estimates via the Census Reporter API. Rent, value and income are metro medians, not the house you will buy.</div>`;
     };
     sel.addEventListener('change', run); $('#cost-size').addEventListener('input', run); run();
   }
