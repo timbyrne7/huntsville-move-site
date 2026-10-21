@@ -44,8 +44,8 @@
         if (box) {
           box.style.display = 'block';
           box.textContent = res.ok
-            ? 'Got it — we saved your request on this prototype server (leads.csv). In production this drops into your CRM.'
-            : 'Saved locally in the browser (the prototype server is not running). Start it with: python3 server.py';
+            ? 'Thanks — we\u2019ve received your request and will be in touch shortly.'
+            : 'We couldn\u2019t submit that just now. Please try again in a moment, or email hello@movetohuntsville.net.';
         }
         if (!res.ok) { try { const k = 'rcm_leads'; const cur = JSON.parse(localStorage.getItem(k) || '[]'); cur.push(payload); localStorage.setItem(k, JSON.stringify(cur)); } catch (_) {} }
         f.reset();
